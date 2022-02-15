@@ -1,6 +1,8 @@
 import requests
 import sys
 from bs4 import BeautifulSoup
+import nltk
+
 
 def main():
     url = "https://www.cbinsights.com/research/startup-failure-post-mortem"
@@ -36,13 +38,16 @@ def main():
         #print(article)
         para.append(article)
 
+    readfile(sys.argv[1])
     sentiment(name , para)
 
     #another possible way
         #keyword = 'fail'
         #_, keyword, after_keyword = article.partition(keyword)
         #print(after_keyword)
-
+def readfile(file):
+    with open(file, "a") as f:
+        print(f.readline(1))
 
 def sentiment(name , paragraphs)-> dict:
     """
