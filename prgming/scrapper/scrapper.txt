@@ -1,0 +1,689 @@
+0
+Protonn
+Title:  Digital solutions startup Protonn shutdown in less than a year after raising $9 million in Seed Fund
+Product:  Protonn
+Protonn, a platform to help independent professionals launch businesses, shut down in the first weeks of 2022, despite having raised $9M in seed funding 6 months prior. It was reportedly unable to find product-market fit, and its founders were not able to rework the company’s business model in order to adapt. While not the primary factor, the pandemic contributed to Protonn’s downfall, as it exacerbated existing complications surrounding market alignment.   
+According to the  Economic Times ,
+“‘Covid-19 didn’t help the startup either, but there was a point when a pivot became necessary but founders weren’t on the same page on that,’ a person aware of the matter said, adding that the company has returned the full capital to investors.”
+
+1
+Local Motors 
+Title:  Local Motors, the startup behind the Olli autonomous shuttle, has shut down
+Product:  Olli
+Local Motors — the company behind Olli, an autonomous shuttle — closed down operations in January. Olli was an all-electric vehicle designed to operate in closed environments, such as college campuses and hospitals. While there was some buzz surrounding the announcement of its spring 2021 pilot partnership with Pacific Western Transportation — to bring shuttles to the city of Toronto, CA — the launch itself largely fell under the radar. 
+Local Motors’ closure came only a few months after president and COO Vikrant Aggarwal took over as CEO and expressed the company’s intent to scale up production. Local Motors has yet to release a statement on the matter.
+Former VP of sales and customer success Chris Stoner commented on his time at the company,
+“The autonomous vehicle space is an exciting emerging market with plenty of opportunity. Experiencing first-hand the skill and dedication of the people I worked with, I have no doubt AVs (like Olli) are the future of transportation.”
+
+2
+Neufund
+Title:  Once Promising German Digital Security Platform Neufund Shuts Down
+Product:  Neufund 
+Neufund, a developer of a blockchain platform for investing and fundraising, announced its closure on January 10. The company had performed well up to this point, processing around  $22.6M  via its Ethereum-based platform and registering 11K investors across 123 countries. 
+Despite its seeming success, Neufund’s fundraising model was ultimately unable to withstand the pressures of a complex regulatory environment. 
+In a blog post, the company stated,
+“Our aim since the beginning always was to make investing and fundraising more inclusive. Our hard-working team combined with you, our incredible community, went down the right path. However, the existing environment of the regulatory system seems not to be equipped yet to support innovative fintech companies.”
+
+3
+askRobin 
+Title:  Estonian FinTech startup shuts down after reaching almost 2M customers
+Product:  askRobin 
+Estonia-based askRobin was a credit marketplace for underbanked consumers in emerging markets. It initially experienced success with the launch of its financial education chatbot, onboarding 200K+ users within its first month of activity. This compelled the company to broaden its offering to include lending services. Despite expanding its customer base to nearly 2M users, the startup ran into a number of complications amid the pandemic, which, in the end, proved to be insurmountable. 
+As per the company’s founder and CEO Rain Sepp,
+“We partnered with over a hundred lending companies to get the fairest credit to our customers. But something we never really achieved was a strong product market fit – not strong enough to allow us to stand against the storm, anyway.”
+
+4
+Ikos 
+Title:  Ikos’ ‘winding down’ of operations comes after years of rapid growth for Pittsburgh-based rental platform
+Pittsburgh-based Ikos stated that it would be “winding down” operations in a letter sent to shareholders at the end of December 2021. This announcement came on the heels of multiple years of continuous growth for the real estate rental platform — it had raised  $7.6M in equity funding across 6 deals  u p to that point . 
+Low rental turnover amid Covid-19 hampered the company’s ability to generate revenue, and while the startup looked to raise additional capital in the latter half of 2021, talks with venture firms fell through, as did its attempt to find a buyer. After exhausting their options, co-founders Steven Welles and Patrick Paul made the decision to close for good. 
+According to Welles,
+“Ultimately, inventory was super tight, which means our revenue growth was limited, and then as we started to pivot to make changes to the business that we were ultimately planning to continue under, we just ran out of time to continue to execute and really to continue to build the momentum that we started.”
+
+5
+LendUp
+Title:  CFPB shuts down payday lender it calls ‘a darling’ of venture capital
+Product:  LendUp 
+Payday loan platform LendUp was forced to halt loan origination and the collection of some outstanding loans as the result of a lawsuit from the Consumer Financial Protection Bureau. The CFPB stated that the company had violated a 2016 consent order, engaged in misleading marketing practices, and failed to provide adverse-action notices to consumers in a timely manner. 
+While LendUp did agree to the terms established in the settlement agreement, it neither confirmed nor denied the CFPB’s allegations. 
+Consumer Financial Protection Bureau director Rohit Chopra stated,
+“LendUp was backed by some of the biggest names in venture capital. We are shuttering the lending operations of this fintech for repeatedly lying and illegally cheating its customers.”
+
+6
+Binance
+Title:  Binance shuts down Singapore cryptocurrency exchange
+Product:  Binance Singapore 
+In mid-December 2021, Binance announced that it would close its portal in Singapore by February 2022. This move came at the tail-end of a series of regulatory challenges faced by the crypto trading platform. In September 2021, the Monetary Authority of Singapore had forced Binance.com to stop providing services to Singaporean residents, compelling its subsidiary, Binance Asia Services (BAS), to apply for a license to operate a regulated cryptocurrency exchange. 
+Like many other crypto players, BAS made the decision to withdraw its application in the face of intense regulatory scrutiny and stated that it would refocus its efforts in the region. 
+KrASIA reported,
+“Binance said it will refocus Binance Asia Services’ operations in Singapore to create a hub for blockchain innovation to help develop the global ecosystem for the technology that underpins cryptocurrencies. It said it will explore a number of Singapore-based initiatives, including incubation programs, blockchain education, and further investment opportunities.”
+
+7
+1520
+Title:  Instant delivery startup 1520 reportedly closes its doors
+Product:  1520
+Per Grocery Dive,
+“Like other companies hoping to find a path to success by stoking customer demand for groceries on the double, 1520 has sought to deliver on the proposition that racing products to people’s doors could lead to a payday for investors.
+
+8
+Apervita
+Title:  Apervita ceases operations
+Product:  Apervita
+Apervita, a health analytics startup, closed its doors in October 2021. While the company had picked up momentum in recent years, acquiring value-based contract and alternative payment administration solutions provider Qcentive and establishing partnerships with organizations like Mayo and Cleveland Clinic, it was not able to raise enough funding to maintain operations.
+Former Apervita chief informatics and innovation officer  Blackford Middleton stated ,
+“Even with this market momentum, however, we ran into challenges with our second round of funding and have simply run out of runway.”
+
+9
+Yunniao
+Title:  Logistics unicorn backed by U.S. investors goes bankrupt
+Product:  Yunniao 
+Same-city logistics company Yunniao went bankrupt at the end of October. Prior to its closure, it had garnered $210M in funding, last raising a $100M Series D round in February 2017. 
+However, the rise of intense market competition and the Covid-19 pandemic set the company into a downward spiral, leaving it strapped for cash. On October 30, the state of the company’s finances was revealed when an employee  posted  from the company’s official Weibo account, stating that employees had not been paid in months. The post also encouraged staff to seek legal action against CEO Han Yi. 
+This sparked a flood of public grievances:
+“More disgruntled employees quickly emerged, claiming they were forced to buy the company’s financial products, and that drivers were required to pay a 4,000 yuan ($626) deposit before they could get jobs, but never had them refunded.”
+
+10
+Payvision
+Title:  ING Phases out Payvision
+Product:  Payvision 
+ING announced that it would begin the shutdown of its Payvision subsidiary, a card acquirer and payments platform, at the start of November. ING  acquired a majority stake in the startup in 2018  to enhance its omnichannel payments and merchant services. Soon after, the startup became mired in controversy — the European Funds Recovery Initiative publicly claimed that the startup had processed  $160M in fraudulent transactions  prior to its acquisition. 
+A sign of events to come, ING  sold half of Payvision’s operations for €1 in 2020 , and it now plans to fully phase out Payvision’s services by 2022. ING pointed to market forces in addressing the move:
+“After a thorough evaluation of all options in the context of the rapidly evolving and increasingly competitive and capital intensive e-commerce merchant market, ING has concluded that it is not feasible to achieve its ambitions with Payvision. The aim is to complete the phase-out process by the second quarter of 2022.”
+
+11
+YCloset
+Title:  Alibaba-backed fashion rental app YCloset shuts down after five years
+Product:  YCloset 
+YCloset — a fashion rental startup — shut down in early July, despite having raised $70M in total disclosed funding since its founding in 2015. In doing so, the company announced plans to end support for its sales and online channels by  August 15 . Like its US-based counterparts, Rent the Runway and Stitch Fix, YCloset operated using a subscription model and allowed its users to rent branded apparel.
+Technode  brought broader issues in the market to light:
+“YCloset’s collapse comes as investor sentiment sours toward the once-popular fashion rental market, which has proven to be capital intensive. As YCloset scaled, it struggled to keep up with high expenses in shipping, dry cleaning, and staying abreast of the latest fashion trends.”
+
+12
+KupiVIP & Mamsy 
+Title:  Russian Online Retail Pioneer KupiVIP Shuts Down
+Discount e-commerce retailer KupiVIP and its affiliate Mamsy shut down after  Yandex backed out of a deal  to buy the company in July. Founded in 2008, KupiVIP was once one of Russia’s top 10 e-commerce sites — in fact, in 2012 it was valued at $400M. However, its ranking fell as competition in the space increased, ultimately leading it to experience a  10% year-over-year decrease in sales revenue  in 2020. 
+Despite having raised $120M in disclosed funding, KupiVIP was unable to compete with rising e-commerce giants like  Wildberries and Lamoda , leading parent company Private Trade to close down operations. KupiVIP board member David Waroquier  stated , 
+“KupiVIP attempted to become omnichannel, involving operating across its websites, mobile app and brick-and-mortar retail stores. All this required significant capital, given the size of the Russian market…
+
+13
+Abundant Robotics
+Title:  US: fruit harvesting robot company shuts down
+Product:  Abundant Robotics 
+Robotic apple harvester developer Abundant Robotics announced that it would be closing its doors at the beginning of July. Abundant claimed that it had been unable to develop the  market traction  necessary to stay afloat amid the pandemic, despite having collected  $10M  in venture capital investment and additional funding from  The Washington Tree Fruit Research Commission . 
+Prior to the announcement, the company put all of its intellectual property and assets up for sale, which included a number of patents integral to the development of its computer vision-enabled robot for fruit picking. Abundant CEO Dan Steere  commented , 
+“After a series of promising commercial trials with prototype apple harvesters, the company was unable to raise enough investment funding to continue development and launch a production system.”
+
+14
+Yelo 
+Product:  Yelo 
+July 2021 saw the closure of Yelo — a challenger bank mainly geared toward gig workers. After raising a seed round in 2019 and subsequently amassing 4M app downloads, the company faced complications with its business model that were further compounded by the onset of the pandemic. While no official statement was made by the company, in July, an anonymous source close to the company  stated , 
+“Yelo suspended the operations last month and laid off all employees in the past few months.”
+
+15
+Orthrus Studios
+Title:  Distant Kingdoms dev Orthrus Studios shuts down after entire team is laid off
+Product:  Orthrus Studios 
+Scotland-based video game developer Orthrus Studios shut down following the launch of its fantasy video game “ Distant Kingdoms”  in May. The company’s team of 10 employees, including founder Oliver V. Smith, were all let go. 
+In a statement on LinkedIn, Smith stated, 
+“As of today myself and my entire team at Orthrus Studios have been made redundant.
+
+16
+Houseparty 
+Title:  Epic Games to shut down Houseparty in October, including the video chat ‘Fortnite Mode’ feature
+Product:  Houseparty 
+At the start of September, Epic Games announced that it would be discontinuing Houseparty come October. Epic  acquired the video chat app in 2019 for $35M  in order to provide live video chat capabilities to Fortnite gamers. While the company didn’t cite an explicit reason for the shutdown, many surmised that the app had simply proven to be  financially unsustainable .
+In a blog post , Epic stated that Houseparty employees would be redistributed across other teams to focus on developing social features at “metaverse scale,” suggesting that Epic would be moving toward developing a larger-scale virtual environment:
+“So what’s next? The team behind Houseparty is working on creating new ways to have meaningful and authentic social interactions at metaverse scale across the Epic Games family.”
+
+17
+Clickety 
+Title:  Closing Clickety
+Product:  Clickety 
+At the end of August, project management tool Clickety  announced  it would be closing down. Customers  were told to contact the company  to obtain a file containing data related to “group memberships, manual comments, people notes, and merged aliases,” otherwise it would be permanently deleted on October 1.  Founder Luke Kanies didn’t provide a specific reason for the closure,  simply stating,
+“We are incredibly proud of what we’ve built. We’ll miss using it ourselves. And we’re as convinced as ever that what we were building – a powerful tool to help people whose jobs are built around people work – is still needed. But we aren’t able to continue our efforts.”
+
+18
+Mastree
+Title:  Unacademy shuts Mastree after a year of acquisition
+Product:  Mastree
+Unacademy  shut down online learning platform Mastree  a year after acquiring a majority stake in the company  for $5M . Of Mastree’s 240 employees, Unacademy stated that 190 would be redistributed across its other businesses following the closure, though Mastree co-founders Shrey Goyal and Royal Jain chose to fully depart. In an internal note, Unacademy co-founder and chief executive Gaurav Munjal  commented ,
+“Everyone – after a lot of experiments we have decided to shut down the operations at Mastree. Kudos to Shrey and Royal for iterating at breakneck speed and trying out many things before all of us decided to shut things down.”
+
+19
+Katerra
+Modular construction startup  Katerra  filed for Chapter 11 bankruptcy in early June 2021. The SoftBank-backed unicorn was last valued at $3B in 2018 and had raised nearly $1.5B in total funding from investors such as Khosla Ventures and Greenoaks Capital Management. 
+Katerra Chief Transformation Officer Marc Liebman stated,
+“Our multi-step action plan has rapidly evolved and includes consolidating US activities, continuing our international businesses, advancing key asset sales, securing debtor-in-possession financing, and commencing an in-court restructuring process. We are grateful to the extraordinary ongoing work and support of the Katerra team and other core constituencies through this extremely difficult time.”
+
+20
+Madefire
+Title:  Digital comics startup Madefire is shutting down
+Madefire , a digital comics startup, entered into an assignment of benefit for creditors (ABC), an alternative to formal bankruptcy, at the beginning of April 2021. This was a sudden announcement for many Madefire users, who were given until the end of the month to download their purchases. The Madefire app powered a number of digital comics apps —  such as Archie Unlimited and IDW  — which were also shut down. Despite having a wide range of artists , including Dave Gibbons, and investors, like Drake , the company faded out in the face of competition.  The Beat reports , 
+“Digital comics platforms have tried to play the start-up-to-acquisition game a few times, none with as big a footprint — or as doggedly — as Madefire. In the end, readers have spoken with their wallets and eyeballs: people prefer free comics, print comics and Amazon (comiXology).”
+
+21
+Aerion Corporation 
+Title:  Aerion Supersonic shuts down, ending plans to build silent high speed business jets
+Aerion Corporation , an aeronautical engineering startup, announced its sudden closure at the end of May 2021. The company had drawn attention for  developing a patented technology that would allow its AS2 supersonic jets to fly without creating a sonic boom . While the company had fostered partnerships with Boeing, General Electric, and NetJets, and reported plans to fly its first jet by 2024 and begin commercial services by 2026, it ultimately succumbed to challenges associated with securing necessary capital. According to a  company statement , 
+“The AS2 supersonic business jet program meets all market, technical, regulatory and sustainability requirements, and the market for a new supersonic segment of general aviation has been validated with $11.2 billion in sales backlog for the AS2.
+
+22
+Periscope 
+Title:  Farewell, Periscope
+Periscope , the livestreaming app that popularized mobile livestreaming, shut down at the end of March 2021 — 6 years after its initial launch. In December 2020, Twitter — which bought Periscope in 2015 for $ 100M — a nnounced that it would be  phasing out the app due to declining usage . The need for Periscope as a standalone service started to wane in 2016 when Twitter announced the launch of its homegrown streaming capabilities. Periscope’s website will remain active with an archive of its public broadcasts and users will still be able to download their data through Twitter as well.  Twitter stated , 
+“The truth is that the Periscope app is in an unsustainable maintenance-mode state, and has been for a while. […]
+
+23
+SuperData Research 
+Title:  Nielsen to Shut Down its SuperData Gaming Division
+Market intelligence provider  SuperData Research  was shuttered in March 2021 by Nielsen Sports, which  acquired the research firm in 2018 to help it enhance its own product offerings . While Nielsen did not specify a reason for shutting down the division, it did state that it would move away from offering gaming services as its own entity and instead add it as an additional feature to its core Nielsen Sports products.  Sports Business Journal  reported that market competition and Covid-19-related complications could have factored into the decision, 
+“…esports industry executives, when informed of the move, noted to SBJ in general that the gaming data space is crowded and that, more broadly, the esports industry hasn’t scaled quite as much as expected in part because of effects from the coronavirus pandemic.”
+
+24
+Hubba 
+Canada-based e-commerce startup  Hubba  shut down in February 2021. The company, which had raised $59M in disclosed equity funding,  aimed to help connect independent retailers and emerging brands to bring attention to new products and facilitate wholesale buying. The announcement was a shock both for those familiar with the company’s earlier achievements and IPO plans and for its employees,  who were immediately let go on an all-hands zoom call at the start of the month . According to Betakit, 
+“It is unclear to what extent the COVID-19 pandemic had hampered Hubba’s growth and customer base. However, one source BetaKit spoke with claimed a months-long battle between Zifkin and Hubba’s board of directors regarding the ongoing viability of the company.”
+
+25
+Hey Tiger 
+Ethical chocolate brand  Hey Tiger  announced its closure at the beginning of May 2021, 3 years after opening. The company’s  mission  was twofold — to produce high-quality chocolate products while simultaneously acknowledging and addressing inequities in the cocoa industry. Not only did it commit to ethically sourcing ingredients, but it also made charitable donations to combat child labor and poverty in cocoa farming communities. Although the company gained a loyal following, it struggled to scale its operations and remain profitable in a manner that aligned with its social goals. A post on the company’s  Instagram  account stated, 
+“But like any start up, there comes a time when you need to take a hard look at the company’s long term viability. Although we designed a business that customers absolutely love, it proved hard to scale into the profitability it needed to be a sustainable social enterprise. As the scale of our chocolate production grew, so did the tensions between the very things that made Hey Tiger special. Ultimately while succeeding in one goal, we couldn’t make the other.”
+
+26
+Beam 
+Title:  FTC shuts down savings app Beam under tentative settlement
+Mobile savings app  Beam  was shut down under a settlement with the Federal Trade Commission. The app — launched in 2019 — initially  billed itself  as “the first mobile high-interest savings account for the 99%,” offering interest rates as high as 7% while still permitting “24/7 access” to deposits. However, a  2020 CNBC investigation  revealed that dozens of customers were not able to get their money out of their accounts, which ultimately led the FTC to shut it down and bar it from operating a similar business in the future. FTC Acting Director of Consumer Protection Daniel Kaufman  stated , 
+“The message here is simple for mobile banking apps and similar services: Don’t lie about your customers’ ability to get their money when they need it.”
+
+27
+JAAK
+Title:  Early blockchain music startup Jaak has shut down
+UK-based blockchain music startup  JAAK  announced that it would be taking most of its properties offline starting at the end of March 2021.  JAAK’s goal in developing its  pilot blockchain network — KORD —  was to create a global view of intellectual property rights and payment information to help artists manage rights ownership and correct inconsistencies in royalty payments. A series of  Tweets  on the company’s corporate account points to challenges with scale and securing adequate funding, among others, as reasons for its undoing, 
+“6 years is a long time in startups, especially pre-revenue ones, and, ultimately, we failed to secure the funding required to get to market. Markets change and we didn’t change quickly enough.
+
+28
+V1 Interactive 
+Title:  Disintegration developer V1 Interactive shuts down
+Video game developer  V1 Interactive  announced its closure in March 2021, just 9 months after releasing its debut game called Disintegration. While the company didn’t cite a specific reason for its closure,  previous reports  indicate that it struggled with growing an audience for its multiplayer offering. It took Disintegration’s multiplayer mode offline in September 2020, and the entire game was taken offline in November. In its  final Twitter announcement , it simply stated, 
+“We are sad to inform you that V1 Interactive is officially closing.
+
+29
+Quibi
+Title:  Quibi Is Shutting Down Barely Six Months After Going Live
+Product:  Quibi
+Mobile-focused streaming service Quibi shut down in October 2020 just 6 months after launching. The platform — which had raised a mammoth $1.75B from investors like  NBC Universal ,  Viacom , and  Warner Bros. Entertainment  — offered subscribers shows made up of  5- to 10-minute episodes, meant to be consumed “on-the-go.” The service failed to gain traction with consumers amid a crowded playing field of streaming services and other short form content providers like TikTok. Roku purchased the rights to Quibi’s programming for less than $100M in January 2021.
+As reported in the Wall Street Journal, founder Jeffrey Katzenberg and chief executive Meg Whitman said in a letter to employees at the time of the shutdown:
+…[T]here were “one or two reasons” for Quibi’s failure: The idea behind Quibi either “wasn’t strong enough to justify a stand-alone streaming service” or the service’s launch in the middle of a pandemic was particularly ill-timed. “Unfortunately, we will never know, but we suspect it’s been a combination of the two,” they said.
+
+30
+Aura Financial
+Title:  Hammered by pandemic, consumer lender Aura shuts down
+Product:  Aura Financial 
+Latino-focused consumer lender Aura Financial, which offered customers loans of $300 to $4,000 through supermarkets and other retailers, suspended operations in early January as it faced increasing financial challenges. On LinkedIn, company co-founder James Gutierrez blamed the company’s demise on the pandemic and a lack of funding, as quoted in American Banker:
+“When the pandemic first hit, Aura was on the verge of closing new financing on its final march to profitability. However, suddenly, all capital dried up as the uncertainty of how our low-income, mostly Latino customer base would recover from a pandemic that disproportionately impacted their jobs, health, and finances intimidated investors.”
+
+31
+Loon
+Title:  Alphabet punctures Loon internet balloon project
+Product:  Loon
+Loon, the high-flying internet balloon project spun out of X,  Alphabet ’s (the parent company of Google) innovation lab, closed down in January. According to the Financial Times,
+Astro Teller, head of X, said on Thursday that, “despite the team’s groundbreaking technical achievements over the last nine years, the road to commercial viability has proven much longer and riskier than hoped.”
+
+32
+Xinja
+Title:  Australian neobank Xinja throws in the towel
+Product:  Xinja
+Australia-based digital bank Xinja announced in December 2020 it would exit banking, returning its banking license and refunding customer deposits. The startup had reportedly spent heavily on its high-interest bank accounts and was unable to close a funding round before announcing its decision to shut down its banking products on its website, noting:
+“After a year marked by Covid-19 and an increasingly difficult capital-raising environment, and following a review of the market in Australia, Xinja has decided to withdraw the bank account and Stash (savings) account and cease being a bank. This was an incredibly hard decision. We hope to refocus the business in other areas such as our US share trading product, Dabble, should circumstances allow.”
+
+33
+GoBear
+Title:  Financial services firm GoBear closing business
+Product:  GoBear
+Despite having raised $17M in fresh funding in May 2020, Singapore-based fintech GoBear announced it would wind down operations earlier this year. The startup, which offered a financial products comparison tool, cited its inability to raise new financing and the pandemic’s downward pressure on consumer demand for products like travel insurance as reasons for its failure. The Strait Times reported:
+In a statement, the fintech firm said Covid-19 has made the operating and fund-raising environment “very challenging,” despite the firm having made progress in its growth and transformation plans last year.
+
+34
+Quantopian
+Title:  A Crowdsourced Quant Fund Fizzles in Era of Democratized Trading
+Product:  Quantopian
+Quantitative trading platform Quantopian announced in October 2020 that it would shut down and that its co-founders and employees would move to  Robinhood . The company, which had raised over $51M in funding from names like Andreessen Horowitz, Khosla Ventures, Bessemer Venture Partners, let users develop and test algorithmic trading strategies for free. Selected algorithms were then used as part of Quantopian’s hedge fund’s investing strategy, and developers would get a cut of the profits. Bloomberg said about the shutdown:
+It was the wisdom of the crowds, applied to the nerdiest corner of Wall Street—radical, sure, but a logical extension of a burgeoning gig economy and a tech revolution that was opening up access to ever-deeper market data.
+
+35
+AWOK
+Title:  Dubai’s Awok shuts down just a year after raising $30 million Series A
+Product:  AWOK
+Dubai-based e-commerce startup AWOK closed down in early September 2020. While the startup blamed the pandemic for its demise in an official statement, the company had allegedly been far behind on payments to its employees and suppliers before then, despite having secured $30M in funding a year prior.
+MENAbytes has spoken with multiple employees at Awok all of which have confirmed that the company has been in crisis since the start of 2020. All of them have told us that the employees weren’t paid salaries since January and the majority of them left the company in March. […]
+
+36
+Brideside
+Title:  Wedding apparel retailer Brideside abruptly shuts down
+Product:  Brideside
+Launched in 2013, wedding and bridesmaid dress retailer Brideside shut down in November 2020, as it and the wedding industry on the whole faced significant headwinds due to Covid-19. According to Retail Dive,
+The retailer, which sold online and through physical retail locations in Boston, Chicago, Charlotte and New York said that “with two-thirds of weddings cancelled in 2020 and an uncertain year ahead, our chapter has come to an end.”
+
+37
+Joonko
+Title:  The fintech company Joonko to cease operations after only 12 months of existence
+Product:  Joonko
+Berlin-based financial products comparison site Joonko shut down in October 2020 after only 1 year in operation. The startup, which had received $11M in seed funding from  Ping An Ventures  and  Raisin , was in talks to raise another financing round which fell through. As quoted in Born2Invest, the company’s press release at the time of its closure stated:
+“Series A financing round with existing and new investors, which was initiated in spring, could not be completed because one of the lead investors withdrew at short notice. An alternative and sufficient financing is not possible in such a short period of time, so the company is now taking the step and discontinuing the business.”
+
+38
+HubHaus
+Title:  Bay Area co-living startup HubHaus implodes, stranding renters and homeowners
+Product:  HubHaus
+Co-living rental platform HubHaus, which raised over $12M in VC funding, announced it would wind down operations in September 2020 after months of missed payments. The company laid off all employees and transferred all tenants’ leases to the homeowners abruptly. The San Francisco Chronicle reports,
+Many landlords who had rented their homes to HubHaus said in interviews and on a Facebook group that it had already slashed the rent it was paying them in recent months, leaving them tens of thousands of dollars in the hole. Several said they were stunned to discover that it had also stopped paying utilities months ago. (Because of the pandemic, utility companies are not cutting off service for nonpayment.)
+
+39
+TerrAvion
+Title:  TerrAvion Abruptly Files For Bankruptcy, Ceases Operations
+Product:  TerrAvion
+Agtech imaging startup TerrAvion folded abruptly in September 2020. According to CropLife, company CEO Robert Morris said in an email to customers:
+“I wish we could have given everyone more of a heads up, but we were working and hoping to avoid this until just hours ago. I cannot tell you how disappointed I am in this outcome. To make the decisions it will be called upon to make on every acre in the 21st century, agriculture needs modern, open, high-resolution data infrastructure. Though TerrAvion delivered the most volume in our category — with positive and growing margins — agribusiness and capital markets seem to have incommensurate expectations. TerrAvion was caught in the middle. The team and I did everything possible in our power to make it work.”
+
+40
+Rubica
+Title:  Seattle cybersecurity startup Rubica shuts down after running out of cash
+Product:  Rubica 
+Cybersecurity startup Rubica, which initially offered its services to individual consumers and small businesses, closed up shop in November 2020. The 4-year-old startup had attempted to pivot to offering its services to larger customers as it struggled to generate enough revenue from its consumer subscription service, but it was unable to convince investors of the viability of its model. Rubica CEO and co-founder Frances Dewing told GeekWire:
+“We were all really surprised given how relevant and needed this is right now,” Dewing said. “Investors didn’t agree with that or see it in the same way.”
+
+41
+Haven
+Title:  Haven, the Amazon-Berkshire-JPMorgan venture to disrupt health care, is disbanding after 3 years
+Product:  Haven
+Haven, a joint venture by  Amazon ,  Berkshire Hathaway , and  JPMorgan Chase  aimed at lowering healthcare costs, announced it would shut down in February 2021, 3 years after launching. According to CNBC,
+One key issue facing Haven was that while the firm came up with ideas, each of the three founding companies executed their own projects separately with their own employees, obviating the need for the joint venture to begin with, according to the people, who declined to be identified speaking about the matter.
+
+42
+TenX
+Title:  Crypto payment and wallet project TenX shuts down
+Product:  TenX
+Cryptocurrency payments startup TenX is sunsetting its current services and has disabled new signups and deposits. The startup, which was incubated by  PayPal  in 2016, announced in October 2020 it would discontinue its cards as its card issuer Wirecard filed for insolvency. The company stated,
+“This is not goodbye, and we want to thank you for your support along the way and helping us build an incredible community of visionaries who are committed to the future of sound money.”
+
+43
+Lumina Networks
+Title:  SDN startup Lumina Networks closes shop, citing Covid-19 impact
+Product:  Lumina Networks
+Lumina Networks, a provider of open source software for telecom networks, announced it was going out of business in late August 2020. Although backed by  AT&T Ventures  and  Verizon Ventures , the company was unable to find a sustainable revenue model, citing the pandemic as a contributing factor, according to its statement:
+“Essentially, revenue continued to flow to proprietary vendors. The switch to open source did not take place at a pace anywhere close to the speed that would enable us to operate and grow our business, despite commitments from many to the contrary. We have also found that Covid-19 has actually redirected funds away from automation projects and into building-out raw infrastructure, further delaying adoption.”
+
+44
+Atrium
+Title:  $75M legal startup Atrium shuts down, lays off 100
+Product:  Atrium
+Legal tech and law firm startup Atrium shut down in March 2020, following an unsuccessful pivot to a pure software offering in January. The firm had received just over $75M in funding from investors including  Andreessen Horowitz ,  General Catalyst , and  New Enterprise Associates , and it was once valued at over $250M. CEO Justin Kan noted in his interview with TechCrunch,
+“If you look at our original business model with the verticalized law firm, a lot of these companies that have this kind of full stack model are not going to survive,” Kan explained. “A lot of these companies, Atrium included, did not figure out how to make a dent in operational efficiency.”
+
+45
+ScaleFactor
+Title:  ScaleFactor Raised $100 Million In A Year Then Blamed Covid-19 For Its Demise. Employees Say It Had Much Bigger Problems.
+Product:  ScaleFactor
+Finance and accounting platform ScaleFactor raised $100M from investors before shutting down in June 2020. In an interview with Forbes, CEO Kurt Rathmann blamed pandemic-related financial woes for the demise of the company, which promised to automate customers’ bookkeeping needs. However, some former clients — and employees — protested this characterization, stating that the AI tech powering the platform was often unpredictable, creating errors that even outsourced accountants the company had hired couldn’t keep up with fixing. According to a Forbes investigation published in July 2020,
+ScaleFactor used aggressive sales tactics and prioritized chasing capital instead of building software that ultimately fell far short of what it promised, according to interviews with 15 former employees and executives. When customers fled, executives tried to obscure the real damage.
+
+46
+Starsky Robotics
+Title:  The End of Starsky Robotics
+Product:  Starsky Robotics
+Starsky Robotics, an autonomous trucking tech startup, folded in March 2020. In a blog post, CEO Stefan Seltz-Axmacher outlined the reasons the company had failed, stating:
+Timing, more than anything else, is what I think is to blame for our unfortunate fate. Our approach, I still believe, was the right one but the space was too overwhelmed with the unmet promise of AI to focus on a practical solution. As those breakthroughs failed to appear, the downpour of investor interest became a drizzle.
+
+48
+jumpshot
+Avast Antivirus’ CEO Ondrej Vlcek and board of directors promptly shut down subsidiary Jumpshot after an investigation by Motherboard and PCMag revealed that Avast, the antivirus security platform, was collecting and selling private user web browsing data through Jumpshot. According to The Verge,
+Vlcek, who became CEO of Avast seven months ago, said he has spent the first few months of his job “re-evaluating every portion of our business,” and that the Jumpshot revelations had eroded trust in the company.
+
+49
+Sorabel
+Fashion e-commerce startup Sorabel was unable to weather the storm created by the Covid-19 crisis, announcing plans to wind down operations in July 2020 as consumers avoided non-essential spending. Sorabel had received over $28M in disclosed funding, and was reportedly poised to close new financing when the pandemic hit and investors withdrew. Deal Street Asia reported,
+In a letter to Sorabel employees, the company said it had done its best to save the business but was left with no choice but to close down. “Due to this liquidation process, we have to terminate employment contracts with no exception, effective July 30. I am certain that no one would ever expect this to happen.”
+
+50
+Hollar
+Launched in 2015, Hollar — backed by investors like Kleiner Perkins Caufield & Byers and Lightspeed Venture Partners — received over $45M in funding to bring the dollar store online. However, Axios reported in February 2020 that the startup would wind down operations amid financial troubles:
+Hollar’s thesis was that dollar store denizens would buy multiple products at a time, thus alleviating pressure on shipping costs. But a source close to the situation says the unit economics never panned out.
+The company is said to have started looking for a buyer late last year, and is in final negotiations with retailer Five Below, which would bring on more employees and at least some of the other assets.
+
+51
+Outline
+Title: The Outline, an attempt to build a bolder kind of news site, appears to have met its end
+Product: The Outline
+Bustle Digital Group shut down digital media company The Outline in April 2020, just one year after acquiring it. Founded in 2016 by journalist Joshua Topolsky, the company raised over $10M in funding to develop a news site that featured immersive design, bold colors, and full-page ads. Amid low site traction and added pressure from the Covid-19 crisis, Bustle Digital laid off The Outline’s staff as part of broader company layoffs. According to Neiman Lab,
+In a statement, Bustle Digital cited the “unprecedented impact of COVID-19,” noting that most remaining employees “will be taking temporary tiered salary reductions.”
+As for The Outline’s future, the statement said: “We are halting operations of The Outline going forward. We will continue to host the publication and the archives, and Josh Topolsky will be exploring alternative paths forward for the publication’s future.”
+
+52
+stay alfred
+Apartment rental startup Stay Alfred was hit hard by the pandemic, as shutdowns forced the company to close its properties and investor interest dried up. The startup, which had raised $62M in funding, announced it would permanently cease operations in May 2020. According to Short Term Rentalz, CEO Jordan Allen said in an interview with the Spokane Journal,
+“My heart’s broken in a lot of ways,” Allen told the newspaper. “We were trying to sell off assets, but there just aren’t a lot of buyers out there.”
+He added that, in hindsight, he would have looked to adopt more of an ownership business model rather than concentrating so heavily on a master lease model.
+
+53
+Stockwell
+AI-powered vending machine startup Stockwell announced its plans to shut down in June 2020, as the Covid-19 pandemic made its business model of in-office and in-apartment building vending machines nonviable. In August, 365 Retail Markets announced its acquisition of Stockwell’s tech platform, which it intends to integrate into its point-of-sale systems. CEO Paul McDonald told TechCrunch,
+“Regretfully, the current landscape has created a situation in which we can no longer continue our operations and will be winding down the company on July 1st,” co-founder and CEO Paul McDonald wrote in an email to TechCrunch. “We are deeply grateful to our talented team, incredible partners and investors, and our amazing shoppers that made this possible. While this wasn’t the way we wanted to end this journey, we are confident that our vision of bringing the store to where people live, work and play will live on through other amazing companies, products and services.”
+
+54
+pillow and ApartmentJet
+In 2018, Expedia acquired rental management software startups Pillow and ApartmentJet in an approximate $54M deal. Expedia combined the startups to form a platform to help landlords and tenants offer short-term rentals. According to Skift, Expedia shut down the platform in May 2020 as Covid-19 decimated the demand for its services,
+Expedia Group CEO Peter Kern and senior executive Barry Diller have been reorganizing the online travel agency for several months, cutting costs, consolidating teams, and trying to simplify what they agree has been a less-than-efficient and complex web of businesses.
+
+55
+Mixer
+Acquired in 2016 by Microsoft, the interactive game streaming service Mixer let viewers interact with streamers via crowd-sourced controls. After failing to scale Mixer to compete with Twitch and YouTube, Microsoft announced in June 2020 that it would shut down the platform and partner with Facebook Gaming. According to The Verge,
+“We started pretty far behind, in terms of where Mixer’s monthly active viewers were compared to some of the big players out there,” says Phil Spencer, Microsoft’s head of gaming, in an interview with The Verge. “I think the Mixer community is really going to benefit from the broad audience that Facebook has through their properties, and the abilities to reach gamers in a very seamless way through the social platform Facebook has.”
+The Expedia Group spokeswoman said factors that led to the demise of its multifamily business grew out of the Covid-19 crisis, which hurt urban demand and complicated investment in supply.
+
+56
+Lasso
+As Facebook prepared the launch of Instagram’s Reels, it shut down its other TikTok clone, Lasso. The app, which was only available in select markets, never gained traction in the US and was shut down by Facebook in July 2020. Business Insider reported,
+“We place multiple bets across our family of apps to test and learn how people want to express themselves,” a Facebook spokesperson said in a statement to Business Insider. “One of these tests was Lasso, our stand-alone short-form video app, which we have decided to shut down. We thank everyone who shared their creativity and feedback with us, which we’ll look to incorporate in our other video experiences.”
+
+57
+trover
+Another Expedia acquisition felled by the pandemic is photo sharing platform Trover. Founded in 2011 by Rich Barton and Jason Karas, Trover aimed to connect travelers through images and experiences shared on the site, which shut down in August 2020. The startup raised $12M before being acquired in 2016 by Expedia. According to GeekWire,
+“I’m really proud of what Jason and the team built with Trover,” Barton told GeekWire in an email Wednesday afternoon. “Exploring the world seems even more important now that we are living our lives in such close proximity to our homes, longing for adventure. Of course, I fully respect and understand Expedia’s decision, given the hurricane that has hit the travel industry.”
+
+58
+Sienna Biopharmaceuticals
+Title:  Sienna Biopharmaceuticals to shut down by end of week
+Product:  Sienna Biopharmaceuticals
+California-based Sienna Biopharmaceuticals had raked in $86M in venture funding before going public at a valuation near $300M in 2017. It ultimately filed for bankruptcy after several pipeline drug flops. According to Becker’s Hospital Review,
+The company, founded in 2010, had hoped to sell itself and restructure but didn’t receive any bids for the whole company. It sold its topical photoparticle therapy assets to Sebacia, a dermatology company, for $1.7 million.
+
+59
+Vicis
+Title:  The N.F.L.’s Favorite Helmet Maker Is in Financial Trouble
+Product:  Vicis
+Football helmet maker Vicis entered receivership after struggling to turn a profit, despite praise for its high-tech helmets. It had raised more than $74M in disclosed funding from investors, but failed to gain market share in a highly complex and competitive industry. According to the New York Times,
+“We were more successful than most at raising capital, but it took a tremendous amount of time and effort, effort that could have been applied to growing and running the business,” [co-founder and ex-CEO Dave] Marver said.
+
+60
+Stratoscale
+Title:  Stratoscale closes down, lays off 60
+Product:  Stratoscale
+Once valued at nearly $90M, Stratoscale developed data center infrastructure software. The Israel-based software company had accumulated funding from big-name investors such as  Cisco Investments ,  Bessemer Venture Partners ,  Intel Capital , and  Qualcomm Ventures , among others, but shuttered after a failed acquisition. As CEO Ariel Maislos told Globes,
+We built something amazing but the merger was not successful. The product that we developed was great and right, if it will be part of a larger organization. We think there has been a technological switch in which the giants dictate the direction of the market and we gave more power to the traditional players. We had an amazing team but we decided that the time had come to move on.
+
+61
+Hipmunk
+Title:  Four years after being acquired, Hipmunk is shutting down
+Product:  Hipmunk
+Founded by Adam Goldstein and Reddit co-founder Steve Huffman, Hipmunk was one of the first metasearch travel sites that allowed users to compare flights, hotels, and car rentals from multiple websites. It gathered $55M in funding before being acquired by  SAP Concur  in 2016, which struggled to integrate the search engine. Its co-founders made a bid to take over the startup before it shuttered but were rejected. As SAP Concur spokesperson Alex Vaught told Skift,
+We carefully considered all potential avenues for Hipmunk and Concur Hipmunk and determined that it was in the best interests of our travelers, customers, our people and SAP Concur to terminate the service and retain all of the intellectual property.
+
+62
+IgnitionOne
+Title:  How IgnitionOne, an adtech company that holding company Dentsu bought for $275 million, wound up selling in a fire sale
+Product:  IgnitionOne
+Once a pioneering adtech firm, IgnitionOne fell from glory after failing to renew its line of credit. A notable problem ex-employees lamented was that management was too personally invested in the startup, hindering growth and adaptability. Zeta Global ultimately purchased the company. In a letter to shareholders, CEO Will Margiloff wrote,
+While the business had turned the corner this year and had the best year to date for % growth, revenue and EBITDA, our liquidity was severely hampered by our inability to renew our line of credit from existing lenders. The underlying cause of this was client concentration and that we operate in an industry where we are required to pay for inventory from suppliers long before our customers remit payment to the Company.
+
+63
+Omni
+Title:  Omni storage & rentals fails, shutters, sells engineers to Coinbase
+Product:  Omni
+Storage and rental startup Omni folded after failing to scale and generate revenue, with Coinbase reportedly agreeing to hire 10 of its engineers. Omni had gathered $35M in funding from  Highland Capital  and Ripple, among others. According to TechCrunch,
+They realized that the core business was just challenging as architected. The service was really great for the consumer but when they looked at what it would take to scale, that would be difficult and expensive.
+
+64
+Miaoshenghou
+Title:  Miaoshenghou closes all 80 stores; another fresh food e-commerce company folds
+Product:  Miaoshenghou
+Fresh food delivery market Miaoshenghou shuttered in December 2019, quietly closing its 80 Shanghai-based stores. The founder noted that low profit margins, as low as 10% to 20% for fresh goods, ultimately led to the chain’s demise. As the founder told China Economic Net,
+The rent for a shop of more than 100 square meters is about 35,000 RMB [~5,088 USD] on average in Shanghai; with other costs, approximately 70,000 to 80,000 RMB [10,176 USD to 11,630 USD]. Even if we automate, such a premium is not enough to offset the sensitivity of consumers to prices.
+
+65
+Juno
+Title:  Gett Announces Closure of Juno and Strategic Partnership With Lyft
+Product:  Juno
+New York ride-hailing app Juno was shut down by parent company Gett in November. The company had long struggled with profitability, and reportedly lost $1M a day. It had previously raised $30M from  Jordache Ventures  and  Rakuten  before getting acquired by  Gett  in 2017. According to the press release,
+Juno is shutting down in New York today as a result of both Gett’s increased focus on the corporate transportation sector and the enactment of misguided regulations in New York City earlier this year.
+
+66
+CrediFi
+Title:  RE data startup CrediFi to shut down following failed sale
+Product:  CrediFi
+Commercial real estate loans data startup CrediFi shut down in December 2019, after failing to find footing in a competitive space that featured incumbents like  CoStar Group . It had earlier raised $29M from a host of investors including  Battery Ventures ,  Viola Ventures , and  Liberty Media Corporation . The Real Deal writes,
+The company, led by CEO Ely Razin, had been in talks to sell to firms including Moody’s — which has been ramping up its real-estate data business — but no deal ever went through, according to a senior employee, whose account was later confirmed by sources familiar with the talks.
+
+67
+Kettlebell Kitchen
+Title:  Kettlebell Kitchen Shuts Down Its Prepared Meal Delivery Service
+Product:  Kettlebell Kitchen
+Meal kit startup Kettlebell Kitchen, which focused on tailored meal kits for specific diets, closed shop in November 2019. It reportedly lost $12M a year, struggling to turn a profit amid a crowded meal kit delivery market, with numerous rivals like HelloFresh and BlueApron competing for the same demographic. The Spoon writes,
+The prepared meal delivery business is tough to scale, given all the supply chain, safety requirements, and logistics. Now we have to see if Kettlebell Kitchen is a canary in the prepared meal delivery coalmine.
+
+68
+Vaniday
+Title:  Rocket-Internet backed salon booking service Vaniday Singapore shuts shop
+Product:  Vaniday
+Beauty booking platform Vaniday shut down in December 2019, despite raising a reported 7-figure round in June. In an interview, CEO Saurabh Chauhan said that the company hadn’t been profitable since its first investment in 2015. According to DealStreetAsia,
+Vaniday’s financial troubles began surfacing this year. According to a Tech in Asia article in June, Vaniday was reported to have pivoted its business to focus solely Southeast Asia, after cutting its operations in Australia, Italy, the UAE, Russia and Brazil. Vaniday was reported to have raised funds at that time, and was planning to raise additional capital by end-2019 to support its market expansion plans.
+
+69
+Planswell
+Title:  Planswell CEO attributes company downfall to social media storm in investor email
+Product:  Planswell
+Toronto-based fintech startup Planswell was unable to recover after a publicized sexual harassment case led to the loss of much-needed financing. According to an investor note obtained by BetaKit,
+Our revenue was up sharply, our culture was fantastic. We had a ton of investors ready to put together a $20M round and several international expansions had just signed. That’s when an ex-employee caused a social media storm around a situation that happened over a year ago.
+
+70
+Coolest Cooler
+Title:  Crowdfunding disaster Coolest Cooler is shutting down and blaming tariffs for its downfall
+Product:  Coolest Cooler
+Widely regarded as one of Kickstarter’s greatest failures, Coolest Cooler finally ceased operations in December after floundering for 5 years. The initial project, which promised a cooler that featured a blender and a bluetooth speaker, raised more than $13M, but ultimately failed to deliver its coolers to more than 20,000 people. In a project update, the team blamed the trade war,
+As you may know, late last year the U.S. government imposed 10% tariffs on many products imported from China. … However, as of early summer, the “trade war” continued, and the tariff was increased to 25% which affected our entire Coolest product line.
+
+71
+Inboard Technology
+Title:  Electric skateboard startup Inboard is for sale and all employees have been laid off
+Product:  Inboard Technology
+Santa Cruz-based Inboard Technology began as a Kickstarter project that raised more than $400K to develop a popular electric skateboard. But its failed pivot to electric scooters sank the startup. In a memo posted on its website, the CEO writes,
+Inboard had a very large order it was ready to fulfill to one of the largest European scooter operators, but in the time it took to bring the ruggedized version of the G1 to market, coupled with dynamic and changing vehicle regulations in Europe, our product development timeline outstretched our financial runway. Throughout this process we had received multiple assurances from our key investors that they would lead a bridge financing if we hit key goals. Inboard hit those goals, but in the end the investors decided they would rather seek the liquidation value of the company rather than take the risk on funding the bridge.
+
+72
+Spacious
+Title:  WeWork is shutting down a restaurant coworking startup it acquired only 4 months ago
+Product:  Spacious
+WeWork shuttered restaurant-based coworking subsidiary Spacious after acquiring it just 4 months earlier. Spacious is just one of many startups, such as Managed by Q and Meetup, that have become collateral in WeWork’s implosion of an IPO. According to Recode,
+“As part of WeWork’s renewed focus on its core workspace business, Spacious will close its doors on December 31, 2019. We regret any disruption that this may cause to you or your business,” reads an email sent to Spacious customers on Thursday.
+
+73
+8tracks
+Title:  To everything there is a reason
+Product:  8tracks
+After 11 years, music streaming platform 8tracks shuttered, citing lack of revenue and increased competition from big players. It had previously raised nearly $7.5M from Andreessen Horowitz,  Uncork Capital ,  Index Ventures , and more. In a blog post, the founder wrote,
+We lost listenership, in large part, because Spotify was able to satisfactorily address listener needs for music discovery and activity- and mood-based listening over time, as it improved its offering, reducing the relative appeal of 8tracks’ early lead in delivering on its unique value propositions through a crowd-curated model.
+
+74
+Tink Labs
+Title:  Inside the Unraveling of Tink Labs
+Product:  T ink Labs  (aka Hi Inc.)
+In one of the largest startup deaths this year, Hong Kong-based Tink Labs, which provided free-to-use smartphones in hotel rooms, ended its services in over 600,000 hotel rooms across 82 countries. According to the Financial Times,
+Interviews conducted by the FT with several former employees have painted a picture of an organisation that pursued growth too aggressively, falling back to earth when its profits did not meet its vision. [Founder] Terence Kwok declined to comment on “potential ongoing labour disputes” or “business transaction details” in terms of outstanding bills. “I am trying to do what I can, but a lot of things are now out of my hands,” he said.
+
+75
+uBiome
+Title:  Health Testing Startup uBiome Files for Chapter 7 With Plans To Shut Down
+Product:  uBiome
+Medical diagnostics startup uBiome was unable to weather an FBI investigation and related fallout from the reveal of the company’s predatory billing practices. According to a Forbes article about the shutdown,
+“uBiome was routinely billing patients… multiple times without their consent, prompting insurance plans to start rejecting these claims. The company also pressured its doctors to approve tests with minimal oversight… The practices were in service of an aggressive growth plan that focused on increasing the number of billable tests served…
+
+76
+Singulex
+Title:  East Bay blood testing company closes, laying off 71
+Product:  Singulex
+Medical testing startup Singulex closed in the wake of a whistleblower suit that claimed it was billing federal health programs for unnecessary blood tests that it pressured upon healthcare providers. Singulex paid a $1.25M fine in August 2018 and shuttered in July 2019.
+The Defense Criminal Investigative Service’s Special Agent in Charge Chris D. Hendrickson said,
+Today’s result resolves serious allegations of fraud against Singulex and is a victory for the U.S. taxpayer. DCIS and its law enforcement partners will aggressively pursue those who attempt to defraud the U.S. military’s health care program and other health care programs in order to ensure the health care system works for U.S. military personnel and their families.
+
+77
+DAQRI
+Title:  Another high-flying, heavily funded AR headset startup is shutting down
+Product:  DAQRI
+DAQRI, a Los Angeles-based AR startup, found itself floundering after burning through investments in excess of $250M and acquiring 4 other entities. Internal sources cited difficulties common among forerunners in emerging industries, including competitors with extensive corporate backing and difficulties training users to use the technology. According to TechCrunch,
+Daqri’s shutdown is only the latest among heavily funded augmented reality startups seeking to court enterprise customers…
+
+78
+Vreal
+Title:  Moving on to new realities…
+Product:  Vreal
+Vreal, a VR platform where video game streamers could share their virtual environment with viewers who could then interact in that VR space, called it quits after raising almost $12M in a Series A round in Q1’18. According to a statement from the company:
+Unfortunately, the VR market never developed as quickly as we all had hoped, and we were definitely ahead of our time. As a result, Vreal is shutting down operations and our wonderful team members are moving on to other opportunities.
+
+79
+Reach Robotics
+Title:  Reach Robotics – End of the Road
+Product:  Reach Robotics
+Reach Robotics, the startup behind gaming robot MekaMon, shut down after being unable to make it in the hypercompetitive consumer hardware industry. Both co-founders weighed in with their thoughts around the life and challenges of Reach Robotics.
+Co-founder Silas Adekunle :
+The consumer robotics sector is an inherently challenging space – especially for a start-up. Over the past six years, we have taken on this challenge with consistent passion and ingenuity. From the first trials of development to accelerators and funding rounds, we have fought to bring MekaMon to life and into the hands of the next generation of tech pioneers. Unfortunately, for Reach Robotics, in its current form at least, today marks the end of that journey.
+
+80
+Oryx Vision
+Title:  Low-Cost LiDAR Startup Oryx Vision Shuts Down
+Product:  Oryx Vision
+Israel-based lidar startup Oryx Vision made the unusual move this year to preemptively shut down its operations — not due to running out of funds, as is frequently the case, but because the founders saw the roadblocks ahead of them in the autonomous vehicle space and decided that Oryx was not equipped to survive into the future. Oryx Vision will be returning approximately $40M to investors as part of this decision.
+Per co-founder Ran Wellingstein:
+I’m immensely proud of what we were able to achieve as a team. Despite this final outcome, I’m certain we have touched a few lives in a positive way and hopefully inspired some of the next generation of scientists, engineers and artists. […] I’m still taking stock of it all but the short version is that it is true what they say – that “hardware is hard” and consumer hardware is even harder due to the reliance on the Christmas sales period.
+
+81
+Pellion Technologies
+Title:  The death of a promising battery startup exposes harsh market realities
+Product:  Pellion Technologies
+Rechargeable battery startup Pellion shuttered due to rising concerns around its ability to yield profit in the autonomous vehicle industry. The company developed a lithium-metal battery which could support drones, but not a mass market of electric vehicles. Quartz reports,
+Currently, the architecture of the autonomous vehicle is simply not converging, so a venture-backed company will not be able to justify the investment that will still be needed… There was a lot of deliberation and investors were prepared to keep going, but we saw that LIDAR was becoming a game of giants and as a small company, it would be difficult to continue operating and return investments.
+
+82
+Phytelligence
+Title:  Ag tech startup Phytelligence shuts down after losing dispute over Cosmic Crisp apple variety
+Product:  Phytelligence
+After losing the rights to its key product (a new strain of apples named Cosmic Crisps) in a legal battle with Washington State University, agtech startup Phytelligence closed its doors for good. Geekwire writes,
+According to former employees, all of whom requested anonymity, Khosla Ventures lost confidence that Pellion could make enough money serving a niche market. The lithium-metal technology worked for products like drones, but the big money in the battery world is in the automotive sector. Investors weren’t willing to sink the money needed to develop the battery for electric vehicles.
+
+83
+DocTalk
+Title:  Matrix Partners-backed health-tech startup DocTalk winds up operations
+Product:  DocTalk
+DocTalk, an India-based startup backed by  Y Combinator  and  Matrix Partners , folded after trying to pivot from being a mobile communications platform between doctors and patients to an electronic medical record (EMR) solutions entity. According to people privy to the shutdown:
+In its lawsuit, Phytelligence claimed that WSU [Washington State University] wrongly blocked the company from commercializing Cosmic Crisp. In its own counter-lawsuit, WSU alleged that Phytelligence improperly sold thousands of Cosmic Crisp trees to a grower.
+
+84
+Homepolish
+Title:  Instagram Versus Reality at Failed Interior-Design Start-up Homepolish
+Product:  Homepolish
+Homepolish, a customizable interior design startup, built a business around sparkling marketing and promises of highly vetted designers that it ultimately couldn’t follow through on. After high-profile denouncements of Homepolish and documentation of the shoddy work done by the startup, the company fell apart — but not before CEO Noa Santos announced that designers would not be paid owed wages and customers would not be able to get refunds. The New York Magazine writes,
+The planned transition into the electronic medical record solution (EMR) business from the existing business model didn’t yield the acceleration that it needed. Subsequently, the company has shuttered the entire health-tech concept and laid off a majority of its employees.
+
+85
+Mac & Mia
+Title:  Kids’ Clothing Startup Mac & Mia Shuts Down 
+Product:  Mac & Mia
+Kids’ apparel delivery service Mac & Mia announced it would cease operations after a short-lived run that began in 2018. The company was unable to carve out its desired niche and had to close shop in late August 2019. According to ChicagoInno,
+The Homepolish name was tarnished in recent months, notably after Ilana Wiles, an Instagram influencer known as @MommyShorts, started posting to her 160,000 followers about her “absolutely awful home renovation experience” with the company earlier in 2019.
+
+86
+Anki
+Title:  Robotics startup Anki shuts down after burning through almost $200 million
+Product:  Anki
+Consumer AI robotics company Anki had raised over $200M from prominent investors but the company wasn’t able to stay afloat after reportedly failing to attract a new round of investment or an acquirer. Anki posted a statement on its website:
+Mac & Mia faced a host of competitors in the children’s delivery box space, including the aforementioned Stitch Fix, which launched its kids clothing service in 2018. Stitch Fix went public in 2017 and has a market cap around $2.7 billion. At least 20 other upstarts have launched similar delivery services for children’s clothes.
+
+87
+Stratolaunch
+Title:  Space firm founded by billionaire Paul Allen closing operations
+Product:  Stratolaunch
+Stratolaunch was founded by late Microsoft co-founder Paul Allen and aimed to launch satellites from planes. The Reuters report of its shuttering came just weeks after it had completed its first test flight:
+It is with a heavy heart to inform you that Anki has ceased product development and we are no longer manufacturing robots. To our partners and customers, thank you for all your support and joining us on this journey to bring robotics and AI out of research labs and into your homes.
+
+88
+Wow Air
+Title:  Iceland’s Wow Air Shuts Down After Failing to Raise New Cash
+Product:  Wow Air
+Low-cost airline Wow Air abruptly shut down in March after being unable to secure additional funding. Bloomberg’s report included part of a letter its Chairman Skuli Mogensen sent to Wow Air staff:
+The decision to set an exit strategy was made late last year by Allen’s sister, Jody Allen, chair of Vulcan Inc and trustee of the Paul G. Allen Trust, one of the four people and the fifth industry source said.
+
+89
+Panda TV
+Title:  Panda TV Officially Shuts Down its Service
+Product:  Panda TV
+The Esports Observer reported on Chinese video streaming service Panda TV shutting down:
+“We have run out of time and have unfortunately not been able to secure funding for the company,” Chairman Skuli Mogensen said in a letter to employees. “I will never be able to forgive myself for not taking action sooner.”
+
+90
+Roadstar.ai
+Title:  Roadstar.ai: The Rise and Fall of a Self-Driving Startup
+Product:  Roadstar.ai
+Autonomous vehicle startup Roadstar.ai was developing autonomous vehicles and had raised around $128M in 2018, but its co-founder was mired by allegations of fraud. Synced Review described the situation in its coverage:
+On March 8, Panda TV announced that the company was in a potential bankruptcy, posting an image of its panda mascot facing a sunset, alongside the word “Bye.” The reasons behind this bankruptcy have not yet been officially published.
+
+91
+Seven Dreamers Laboratories
+Title:  Laundroid company folds before its giant robot does
+Product:  Seven Dreamers Laboratories
+Panasonic-backed Seven Dreamers Laboratories offered a laundry machine which aimed to act as a combined washer, dryer, and clothes folder. Engadget thought that the machine was trying to do too much:
+Things however quickly turned ugly for the promising startup. In an announcement published on WeChat in late January, Tong and Heng announced they had fired Zhou, accusing him of receiving kickbacks during fundraising, deliberately hiding codes, and putting false data into a government regulatory report.
+
+92
+Lesara
+Title:  No investor found: Lesara’s online store is now offline
+Product:  Lesara
+The German online fashion retailer couldn’t keep operations going after failing to find an investor or a buyer, according to neuhandeln.de:
+Clearly, the product was too ambitious. Seven Dreamers had planned a simpler, but still potentially-impressive version that merely folded and sorted clothes. The first-gen model still required a complex combination of robotics, image analysis and artificial intelligence to achieve its goals, however.
+
+93
+Crazy Teacher
+Title:  “Crazy Teacher” announced that it will stop operating
+Product:  Crazy Teacher
+Chinese home tutoring app Crazy Teacher — which included  Tencent  as one of its investors — closed in April, as reported by Pencil News:
+At the beginning of February, BBL announced that a planned investor solution for the insolvent online retailer had “burst at the last minute.” Thus, the provisional insolvency administrator Christian Graf Brockdorff had negotiated the final details of a purchase agreement with a strategic investor. Shortly before the signature, the investor had “pulled back unexpectedly late at night.”
+
+94
+Arivale
+Title:  Scientific wellness startup Arivale closes abruptly in ‘tragic’ end to vision to transform personal health
+Product:  Arivale
+Geekwire reported that genetic testing startup Arivale shut down suddenly:
+The crazy teacher app page displays the words “Goodbye” and writes: “The madness has ended, thank you for the past.”
+
+95
+Aria Insights
+Title:  Drone maker Aria Insights, formerly CyPhy Works, shuts down
+Product:  Aria Insights
+Aria Insights — backed by high-profile investors such as  Lux Capital  and Bessemer Venture Partners — offered drones which were designed to gather data from challenging environments. The Robot Report says that Aria Insights was in the middle of rebrand when it closed:
+The decision was a surprise to many Arivale employees and customers. In a message to Arivale customers this afternoon, the company attributed the decision to “the simple fact that the cost of providing the service exceeds what our customers can pay for it.”
+
+96
+Shoes of Prey
+Title:  The Shoes of Prey Journey Ends
+Product:  Shoes of Prey
+Co-founder Michael Fox announced in a blog post that the brand was shutting down, citing a lack of demand for their customization approach:
+CyPhy Works rebranded as Aria Insights in January 2019 to focus more on using artificial intelligence and machine learning to help analyze data collected by drones. “A number of our partners were collecting and housing massive amounts of information with our drones, but there was no service in the industry to quickly and efficiently turn that data into actionable insights,” Lance Vanden Brook, former CyPhy and current Aria CEO said at the time of the rebranding.
+
+97
+HomeShare
+Title:  HomeShare Closing Its Doors
+Product:  Homeshare
+HomeShare aimed to help users find affordable accommodation but, after failing to secure new financing, the company announced it was closing in a post on its website:
+We learnt the hard way that mass market customers don’t want to create, they want to be inspired and shown what to wear. They want to see the latest trends, what celebrities and Instagram influencers are wearing and they want to wear exactly that  —  both the style and the brand.
+
+98
+Fabric
+Title:  Sunsetting the Fabric App
+Product:  Fabric
+In a blog post, the Y-Combinator graduate said it couldn’t make its memory curation app a sustainable product:
+HomeShare encountered unexpected financial constraints arising from a financing that did not materialize. In response, we cut costs by changing our service and significantly reducing staff. Unfortunately, these measures were insufficient and HomeShare no longer has the capital to continue to operate.
+
+99
+Aiwujiwu
+Title:  Chinese Online Property ‘Unicorn’ Aiwujiwu Shuts Down
+Product:  Aiwujiwu
+While no official statement has been made, the former unicorn’s website appears to be inactive:
+We’ve devoted all our time and energy into making the product we think should exist in the world. In the process, we believe we’ve pushed the boundaries on what technology should accomplish for users, and the experiences that personal data is capable of powering. However, we have been pushing against headwinds in the industry which make it unsustainable to stay afloat while standing by our principles.
+
