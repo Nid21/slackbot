@@ -4,14 +4,13 @@ from collections import Counter
 import nltk
 from nltk.corpus import stopwords
 import string
-
-
-def readfile(file)->str():
+nltk.download('omw-1.4')
+def readfile(file):
     with open(file, "r", encoding="utf8") as f:
         return f.read()
 
 class textanalysis():
-    def __init__(self, article:str , stopwords , punctuation , lem) -> None:
+    def __init__(self, article , stopwords , punctuation , lem):
         self.article = article 
         self.words = []
         #self.filtered = []    
@@ -23,12 +22,12 @@ class textanalysis():
         self.remove_noise()
         #self.plot()  
 
-    def tokenisation(self)->None:
+    def tokenisation(self):
         #self.article = sent_tokenize(self.article , language="english")
         #for word in self.article:
         self.words = nltk.tokenize.word_tokenize(self.article)
         
-    def remove_noise(self) ->None:
+    def remove_noise(self):
         self.words.pop(0)
         for w in self.words:
             if w.lower().strip() not in self.stopword and w not in self.punctuation and w.lower().strip() not in [".",",","’",":","—","”","“", "company","title", "product" ,"startup","shut"]:
