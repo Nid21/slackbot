@@ -1,80 +1,15 @@
-import requests
+
 import sys
-import matplotlib.pyplot as mat
+from collections import Counter
 import nltk
 from nltk.corpus import stopwords
 import string
-from bs4 import BeautifulSoup
 
-
-def get_text():
-    url = "https://www.cbinsights.com/research/startup-failure-post-mortem"
-    result = requests.get(url).text
-    doc = BeautifulSoup(result , "html.parser")
-    h3 = doc.find_all(["h3"] )
-    bq = doc.find_all(["blockquote"] )
-    for i in range(100):
-        if i > 46 and i <58:
-            continue
-        name = h3[i].string
-        article = str()
-        p = h3[i].next_sibling
-        z = bq[i] if i<80 else bq[i+1]
-        while p is not z:
-            if not(p.string == None or p.string == '\n'):
-                if p.string not in ["Product:" , "Title:" ,"Company:"] :
-                    article = article + '\n' + p.string
-            else:
-                try:
-                    # remove if have missing info
-                    text = " ".join([child.string for child in p.children])
-                    article = article + '\n' + text
-                except:
-                    pass
-            p = p.next_sibling
-        article = article + '\n' + bq[i].p.string
-        writefile(sys.argv[1] , name , article , i)
-    
-def writefile(file, name , article , number):
-    with open(file, "a" , encoding="utf8") as f:
-        f.write(str(number))
-        f.write("\n")
-        f.write(name)
-        f.write(article)
-        f.write("\n")
-        f.write("\n")
-
-def sentiment(name , paragraphs)-> dict:
-    """
-    Sentiment analysis!!! by words / phrases
-    """
-    reason = {}
-    
-    for para in paragraphs:
-        _reason = []
-        if any(word in para for word in["pandemic" , "COVID"]):
-            _reason.append("Pandemic")
-            print("Pandemic")
-        if any(word in para for word in ["margins" , "low profit", "no captial", "low captial" ,"revenue growth"]):
-            _reason.append("margins")
-            print("margins")
-        if any(word in para for word in ["unable to find product-market fit","product market fit"]):
-            _reason.append("buiness model")
-            print("buiness model")
-        if any(word in para for word in ["complex regulatory environment","violated" , "illegally", "illegal"]):
-            _reason.append("regulation")
-            print("regulation")
-        if any(word in para for word in ["misleading marketing practices","violated"]):
-            _reason.append("PR")
-            print("PR")
-        if any(word in para for word in ["bankrupt"]):
-            _reason.append("bankrupt")
-            print("bankrupt")
 
 def readfile(file)->str():
     with open(file, "r", encoding="utf8") as f:
         return f.read()
-        
+
 class textanalysis():
     def __init__(self, article:str , stopwords , punctuation , lem) -> None:
         self.article = article 
@@ -86,7 +21,7 @@ class textanalysis():
         self.lem = lem  
         self.tokenisation() 
         self.remove_noise()
-        self.plot()  
+        #self.plot()  
 
     def tokenisation(self)->None:
         #self.article = sent_tokenize(self.article , language="english")
@@ -106,11 +41,19 @@ class textanalysis():
         print(self.dlem.most_common(150))
         #mat.show()
 
-
+    def ngram(self, n = 5):
+        self.ngrams = Counter(nltk.ngrams(self.lemma,n))
+        for ngram, freq in  self.ngrams.most_common(100):
+            print(f"{freq}, {ngram}")
 
 if __name__ == "__main__":
     article = readfile(sys.argv[1])
+    with open("function_words.txt") as f:
+        function_words = set(f.read().splitlines())
     #ps = nltk.PorterStemmer()
     lem = nltk.stem.WordNetLemmatizer()
-    stop_words = set(stopwords.words("english"))
+    stop_words = set(stopwords.words("english")).union(function_words)
+    
     text = textanalysis(str(article),stop_words,set(string.punctuation) , lem)
+    # generate n gram
+    text.ngram( 1)
