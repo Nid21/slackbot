@@ -4,7 +4,7 @@ from collections import Counter
 import nltk
 from nltk.corpus import stopwords
 import string
-nltk.download('omw-1.4')
+
 def readfile(file):
     with open(file, "r", encoding="utf8") as f:
         return f.read()
