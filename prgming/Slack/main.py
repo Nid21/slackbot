@@ -1,7 +1,7 @@
 code = "xapp-1-A034FAQDDDM-3168440167236-e2f1e3734c3311e88ba448bd0e4187a34f89a48137174e767b968e45b6c0c557"
 token = "xoxb-3165462542083-3165963183010-EArtapJ8aizdSqJJy5Ebkxux"
 
-from matplotlib.pyplot import text
+
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
 
@@ -11,10 +11,12 @@ app = App(token = token)
 
 @app.event("team_join")
 def ask_for_introduction(event, say):
-    welcome_channel_id = "C12345"
+    welcome_channel_id = "#test"
     user_id = event["user"]
     text = f"Welcome to the team, <@{user_id}>! 🎉 You can introduce yourself in this channel."
     say(text=text, channel=welcome_channel_id)
+
+app.client.conversations_open
 
 @app.message("joke")
 def joke(say):
@@ -126,6 +128,82 @@ def finished(ack, respond):
 def endwork(ack , respond):
     ack()
     respond("Have a nice day!")
+
+@app.message("Log_users")
+def log(say):
+    say("logging")
+    chatId = app.client.conversations_list(types= "im")
+    global _id
+    _id = set([entry["id"] for entry in chatId["channels"]])
+
+@app.message("Message_users")
+def message(say):
+    say("Loading...")
+    blocks = [
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "Who do you wish to message?",
+				"emoji": True
+			}
+		},
+        {
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "all",
+						"emoji": True
+					},
+					"value": "all",
+                    "style": "primary",
+					"action_id": "Message2"
+				}
+			]
+		}
+	]
+    try:
+        for i in _id:
+            blocks.append({
+                "type": "actions",
+                "elements": [
+                    {
+                        "type": "button",
+                        "text": {
+                            "type": "plain_text",
+                            "text": i,
+                            "emoji": True
+                        },
+                        "value": i,
+                        "style": "primary",
+                        "action_id": "Message2"
+                    }
+                ]
+            })
+    except Exception as e:
+        #implement logging next time
+        print("error" , e)
+    say(blocks = blocks)
+
+@app.action("Message2")
+def message2(action,ack,respond):
+    ack()
+    respond("sending")
+    val = action["value"]
+    if val == "all":
+        for i in _id:
+            app.client.conversations_open(channel=i)
+            app.client.chat_postMessage(channel=i,text = "bot here, nid is a joke")
+    else:
+        app.client.conversations_open(channel=val)
+        app.client.chat_postMessage(channel=val,text = "hello nid is a joke")
+
+@app.event("message")
+def handle_message_events():
+    pass
 
 
 if __name__ == "__main__":
