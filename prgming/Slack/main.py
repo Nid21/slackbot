@@ -1,5 +1,5 @@
-code = "xapp-1-A034FAQDDDM-3171303220310-95afca637047d9eb4671ffd468b921fa2b204bd5f37466c744667a04afa603ab"
-token = "xoxb-3165462542083-3165963183010-2Duos54Dlt6TrCyJAQOoFHhx"
+code = "xapp-1-A034FAQDDDM-3173991433606-222d8d0ae1d6e6df987906cccced03cde67d7f7f2e832673a8ea9060e344dd7c"
+token = "xoxb-3165462542083-3165963183010-jtNOqRi6yZf3VD3cjgxp0Mb8"
 import datetime
 import os
 import copy
@@ -294,10 +294,6 @@ def Message3(ack , body):
 def handle_message_events():
     pass
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 9539fa13370f5fe2ff1f21b00cf9900de6d44ce5
 	
 flask_app = Flask(__name__)
 handler = SlackRequestHandler(app , code)
