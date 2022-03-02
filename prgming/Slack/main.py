@@ -23,7 +23,6 @@ c = conn.cursor()
 
 _id = {}
 app = App(token = token)
-
 with open(os.path.join("jsons", "task_modal.json"), "r") as f:
 	task_modal =json.load(f)
 with open(os.path.join("jsons", "quiz_modal.json"), "r") as f:
@@ -301,7 +300,8 @@ handler = SlackRequestHandler(app)
 def slack_events():
     return handler.handle(request)
 
-
+#if __name__ == "__main__":
+#	pass
 		#for k , v in c.fetchall():
 		#	_id[k] = v
 		#handler = SocketModeHandler(app, code)
