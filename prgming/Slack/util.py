@@ -1,44 +1,63 @@
-import os
-import sqlite3
-import schedule
-import time
-import asyncio
-def create_table():
-    global c , conn
-    c.execute("CREATE TABLE user(user_id text PRIMARY KEY,username text NOT NULL)")
-    conn.commit()
-conn = sqlite3.connect("users.db")
+import psycopg2
+
+conn= psycopg2.connect(
+    host = 'ec2-34-231-183-74.compute-1.amazonaws.com',
+    database = 'dc0igpc5jm4k89',
+    user = 'nfzzdkpylmukuc',
+    password = '7ba6c5d8cb4fde597dd536de44d73f1d6dcfd285ad011e17c5980e0a377a0f67',
+    port = '5432'
+)
 c = conn.cursor()
 
-create_table()
-c.execute("SELECT * FROM user")
-z = c.fetchall()
-print(z)
+def log_sql(user_id = None ,name = None ):
+	if user_id == None or name == None:
+		return False
+	#check if have users
+	c.execute("SELECT * FROM botuser where user_id=(%s);",(user_id, ))  
+	results = c.fetchall()
+	if len(results) == 0:   
+		c.execute("INSERT INTO botuser (user_id,user_name)VALUES(%s,%s )", (user_id,name))
+		conn.commit()   
+		return True
+	else:   
+		return False 
+
+def log_sql_qns(dict):
+    if len(dict) != 5:
+        return False
+    else:
+        c.execute("INSERT INTO questions (qns,ans_c,ans_w1,ans_w2,ans_w3)VALUES(%s,%s,%s,%s,%s )", (dict["qns_content"], dict["qns_correct"], dict["qns_wrong1"], dict["qns_wrong2"], dict["qns_wrong3"]))
+        return True
+def create_table():
+    c.execute("""CREATE TABLE botuser(
+        user_id VARCHAR(20) PRIMARY KEY,
+        user_name VARCHAR(50) NOT NULL,
+        created_on TIMESTAMP);""")
+    c.execute(""""CREATE TABLE questions(
+        qn_id serial PRIMARY KEY,
+        qn_task
+        qns TEXT NOT NULL,
+        ans_c TEXT NOT NULL,
+        ans_w1 TEXT,
+        ans_w2 TEXT,
+        ans_w3 TEXT,
+    );
+    """)
+    c.execute("""CREATE TABLE results(
+        user_id VARCHAR(20) NOT NULL,
+        days_not_replied INT,
+        qn_id INT NOT NULL,
+        week INT NOT NULL,
+        option TEXT NOT NULL,
+        answered_on TIMESTAMP,
+        FOREIGN KEY (user_id),
+            REFERENCES botuser(user_id)
+        FOREIGN KEY (qn_id)
+            REFERENCES questions(qn_id)
+    );""")
 
 
-def gay(num):
-    print(num)
 
-schedule.every(1).seconds.do(gay, "gay")
-
-async def sch():
-    for i in range(20):
-        schedule.run_pending()
-        await asyncio.sleep(3)
-
-async def randtask():
-    for i in range(10):
-        print("here",i)
-        print(i)
-        await asyncio.sleep(5)
-        print("next",i)
-
-async def main():
-    t2 = asyncio.create_task(randtask())
-    t1 = asyncio.create_task(sch())
-    
-    await t1
-    await t2
-
-asyncio.run(main())
-    
+if __name__ == "__main__":
+    pass
+    #create_table()

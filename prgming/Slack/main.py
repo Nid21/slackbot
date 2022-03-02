@@ -1,13 +1,26 @@
 code = "xapp-1-A034FAQDDDM-3171303220310-95afca637047d9eb4671ffd468b921fa2b204bd5f37466c744667a04afa603ab"
 token = "xoxb-3165462542083-3165963183010-2Duos54Dlt6TrCyJAQOoFHhx"
-import sqlite3
 import datetime
 import os
 import copy
 import random
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
+from slack_bolt.adapter.flask import SlackRequestHandler
 import json
+from flask import Flask , request
+import util
+import psycopg2
+conn= psycopg2.connect(
+    host = 'ec2-34-231-183-74.compute-1.amazonaws.com',
+    database = 'dc0igpc5jm4k89',
+    user = 'nfzzdkpylmukuc',
+    password = '7ba6c5d8cb4fde597dd536de44d73f1d6dcfd285ad011e17c5980e0a377a0f67',
+    port = '5432'
+)
+c = conn.cursor()
+
+
 _id = {}
 app = App(token = token)
 
@@ -21,6 +34,8 @@ with open(os.path.join("jsons", "quiz_start.json"), "r") as f:
 	quiz_start =json.load(f)
 with open(os.path.join("jsons", "msg_usr.json"), "r") as f:
 	msg_usr =json.load(f)
+with open(os.path.join("jsons", "add_qns.json"), "r") as f:
+	add_qns =json.load(f)
 
 @app.event("team_join")
 def ask_for_introduction(event, say):
@@ -30,7 +45,7 @@ def ask_for_introduction(event, say):
 	say(text=text, channel=welcome_channel_id)
 	users = app.client.users_list()
 	username = users["members"]["name"] if users["members"]["id"] == user_id else None
-	if not log_sql(user_id = user_id, name = username):
+	if not util.log_sql(user_id = user_id, name = username):
 		print("log new user error")
 
 @app.command("/joke")
@@ -185,14 +200,14 @@ def results(body, say, ack):
 
 
 
-@app.message("Log_users")
+@app.command("/starts")
 def log(say):
 	say("logging")
 	users = app.client.users_list()
 	id = {member["id"] : member["name"] for member in users["members"] if "bot" not in member["name"].lower() }
 	for k,v in id.items():
 		if log_sql(user_id= k,name = v):
-			say(f"Successfully logged {v}")
+			say(f"Successfully logged in {v}")
 			global _id
 			_id[k] = v
 		else:
@@ -226,6 +241,20 @@ def message(say):
 		#implement logging next time
 		print(e)
 		say("No users logged!")
+
+@app.command("/addqns")
+def add_questions(action,ack,client,body):
+	ack()
+	client.views_open(trigger_id=body["trigger_id"], view = add_qns)
+
+@app.view("addqns")
+def log_quetions(body, ack):
+	ack()
+	qns = {}
+	for key ,value in body['view']["state"]["values"].items():
+		print(key,value['plain_text_input-action']["value"])
+		qns[key] = str(value['plain_text_input-action']["value"])
+	util.log_sql_qns(qns)
 
 @app.action("Message2")
 def message2(action,ack,client,body):
@@ -280,12 +309,15 @@ def log_sql(user_id = None ,name = None ):
 	else:   
 		return False 
 	
+#flask_app = Flask(__name__)
+#handler = SlackRequestHandler(app , code)
+#@flask_app.route("/slack/events", methods=["POST"])
+#def slack_events():
+    #return handler.handle(request)
 
 if __name__ == "__main__":
-		c = sqlite3.connect("users.db").cursor()
-		c.execute("SELECT * FROM user")
-		for k , v in c.fetchall():
-			_id[k] = v
+		#for k , v in c.fetchall():
+		#	_id[k] = v
 		handler = SocketModeHandler(app, code)
 		handler.start()
 

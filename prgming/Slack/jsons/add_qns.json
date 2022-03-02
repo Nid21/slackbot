@@ -1,0 +1,100 @@
+{
+	"type": "modal",
+	"callback_id": "addqns",
+	"title": {
+		"type": "plain_text",
+		"text": "Add questions",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "input",
+			"block_id": "qns_content",
+			"element": {
+				"type": "plain_text_input",
+				"multiline": true,
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Question",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "qns_correct",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Correct option",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "qns_wrong1",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Wrong option",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "qns_wrong2",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Wrong option",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "qns_wrong3",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Wrong option",
+				"emoji": true
+			}
+		},	
+        	{
+			"type": "input",
+			"block_id": "qns_task",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Question focus formate: task_(focus), eg task_SQL",
+				"emoji": true
+			}
+        }
+	]
+}
