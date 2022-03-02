@@ -296,7 +296,7 @@ def handle_message_events():
 
 	
 flask_app = Flask(__name__)
-handler = SlackRequestHandler(app , code)
+handler = SlackRequestHandler(app)
 @flask_app.route("/slack/events", methods=["POST"])
 def slack_events():
     return handler.handle(request)
