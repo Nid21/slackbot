@@ -1,12 +1,10 @@
-code = "xapp-1-A034FAQDDDM-3168440167236-e2f1e3734c3311e88ba448bd0e4187a34f89a48137174e767b968e45b6c0c557"
-token = "xoxb-3165462542083-3165963183010-EArtapJ8aizdSqJJy5Ebkxux"
+code = "xapp-1-A034FAQDDDM-3171303220310-95afca637047d9eb4671ffd468b921fa2b204bd5f37466c744667a04afa603ab"
+token = "xoxb-3165462542083-3165963183010-2Duos54Dlt6TrCyJAQOoFHhx"
 import sqlite3
 import datetime
 import os
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
-conn = sqlite3.connect(os.path.join("Slack","users.db"))
-c = conn.cursor()
 
 _id = {}
 app = App(token = token)
@@ -144,7 +142,6 @@ def endwork(ack , respond):
 
 @app.message("Log_users")
 def log(say):
-	say("/joke")
 	say("logging")
 	users = app.client.users_list()
 	id = {member["id"] : member["name"] for member in users["members"] if "bot" not in member["name"].lower() }
@@ -264,7 +261,7 @@ def log_sql(user_id = None ,name = None ):
 
 
 if __name__ == "__main__":
-		c = sqlite3.connect(os.path.join("Slack","users.db")).cursor()
+		c = sqlite3.connect("users.db").cursor()
 		c.execute("SELECT * FROM user")
 		z = c.fetchall()
 		for k , v in z:
