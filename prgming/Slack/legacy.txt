@@ -1,0 +1,123 @@
+@app.event("app_mention")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+def mention_handler(body, say):
+        say(blocks=[
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "Hi, welcome to the employee training programme.\n Click the button below for today's task!:smile:",
+				"emoji": True
+			}
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Tasks",
+						"emoji": True
+					},
+					"value": "task",
+					"action_id": "taskmaster"
+				}
+			]
+		}
+	]
+)
+
+@app.action("taskmaster")
+def task_handler(ack , respond):
+    ack()
+    task = "random task"
+    respond( blocks = [
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": f"Your task for today will be: {task}.\n Once done please press the button done :smile:",
+				"emoji": True
+			}
+		},
+        {
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Done",
+						"emoji": True
+					},
+					"value": "Done",
+                    "style": "primary",
+					"action_id": "Donetask"
+				}
+			]
+		}
+	]
+)
+
+@app.action("Donetask")
+def finished(ack, respond):
+    ack()
+    respond(blocks = [
+        {
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "Thank you for finishing your work!",
+				"emoji": True
+			}
+		},{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"emoji": True,
+						"text": "Another task"
+					},
+					"style": "primary",
+					"value": "click_me_123",
+                    "action_id": "taskmaster"
+				},
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"emoji": True,
+						"text": "Deny"
+					},
+					"style": "danger",
+					"value": "click_me_123",
+                    "action_id": "Done"
+				}
+			]
+		}
+	])
+
+@app.action("Done")
+def endwork(ack , respond):
+    ack()
+    respond("Have a nice day!")
+
+
+
+
+	with open(os.path.join("jsons", "quiz_modal.json"), "r") as f:
+		data =json.load(f)
+		answers = [("product tear down" , True), ("Presentation", False), ("Work from home", False), ("Ikea shopping", False)]
+		random.shuffle(answers)
+		for ans,result in answers:
+			data["blocks"][2]["element"]["options"].append({
+						"text": {
+							"type": "plain_text",
+							"text": ans,
+						},
+						"value": ("true" if result is True else "false")
+					})
+		print(data)
+	client.views_push(trigger_id=body["trigger_id"], view= data)

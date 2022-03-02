@@ -1,0 +1,26 @@
+[
+    {
+        "type": "section",
+        "text": {
+            "type": "plain_text",
+            "text": "Who do you wish to message?",
+            "emoji": true
+        }
+    },
+    {
+        "type": "actions",
+        "elements": [
+            {
+                "type": "button",
+                "text": {
+                    "type": "plain_text",
+                    "text": "all",
+                    "emoji": true
+                },
+                "value": "all",
+                "style": "primary",
+                "action_id": "Message2"
+            }
+        ]
+    }
+]

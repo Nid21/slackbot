@@ -1,0 +1,36 @@
+[
+    {
+        "type": "section",
+        "text": {
+            "type": "plain_text",
+            "text": "Hello :wave:, welcome to the employee cyber security training programme.\n Click the button below for your task:smile: .",
+            "emoji": true
+        }
+    },
+    {
+        "type": "actions",
+        "elements": [
+            {
+                "type": "button",
+                "text": {
+                    "type": "plain_text",
+                    "text": "Lets do it!:i_love_you_hand_sign:",
+                    "emoji": true
+                },
+                "value": "click_me_123",
+                "style": "primary",
+                "action_id": "task1"
+            },
+            {
+                "type": "button",
+                "text": {
+                    "type": "plain_text",
+                    "text": "Remind me again:sleeping:",
+                    "emoji": true
+                },
+                "value": "message_1",
+                "action_id": "reminder"
+            }
+        ]
+    }
+]

@@ -3,11 +3,24 @@ token = "xoxb-3165462542083-3165963183010-2Duos54Dlt6TrCyJAQOoFHhx"
 import sqlite3
 import datetime
 import os
+import copy
+import random
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
-
+import json
 _id = {}
 app = App(token = token)
+
+with open(os.path.join("jsons", "task_modal.json"), "r") as f:
+	task_modal =json.load(f)
+with open(os.path.join("jsons", "quiz_modal.json"), "r") as f:
+	quiz_modal = json.load(f)
+with open(os.path.join("jsons", "task_start.json"), "r") as f:
+	task_start =json.load(f)
+with open(os.path.join("jsons", "quiz_start.json"), "r") as f:
+	quiz_start =json.load(f)
+with open(os.path.join("jsons", "msg_usr.json"), "r") as f:
+	msg_usr =json.load(f)
 
 @app.event("team_join")
 def ask_for_introduction(event, say):
@@ -27,118 +40,150 @@ def joke(say, client, ack):
 	say(jokes.pop())
 	time = datetime.datetime.now()+datetime.timedelta(seconds=20)
 	time = int(time.timestamp())
-
-	client.chat_scheduleMessage(channel="U035K656K3J",text="Looking towards the future",post_at=time)
 	result = client.chat_scheduledMessages_list()
         # Print scheduled messages
 	for message in result["scheduled_messages"]:
 		print(message)
 
-@app.event("app_mention")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-def mention_handler(body, say):
-        say(blocks=[
-		{
-			"type": "section",
-			"text": {
-				"type": "plain_text",
-				"text": "Hi, welcome to the employee training programme.\n Click the button below for today's task!:smile:",
-				"emoji": True
-			}
-		},
-		{
-			"type": "actions",
-			"elements": [
-				{
-					"type": "button",
-					"text": {
-						"type": "plain_text",
-						"text": "Tasks",
-						"emoji": True
-					},
-					"value": "task",
-					"action_id": "taskmaster"
-				}
-			]
-		}
-	]
-)
+@app.message("app")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+def mention_handler( say):
+	say(text = "debugging")
+	say(blocks = task_start)
 
-@app.action("taskmaster")
-def task_handler(ack , respond):
-    ack()
-    task = "random task"
-    respond( blocks = [
+@app.action("reminder")
+def reminder(body,action,ack, say,client):
+	ack()
+
+	if datetime.datetime.today().weekday() in [4,5,6]:
+		say(text = "Aright set a reminder for monday 9:30 AM")
+		onDay = lambda date, day: date + datetime.timedelta(days=(day-date.weekday()+7)%7)
+		date = onDay(datetime.datetime.now().date(),0)
+		print(date+ datetime.timedelta())
+	else:
+		say(text = "Aright set a reminder for tommorow 9:30 AM")
+		date = datetime.date.today() + datetime.timedelta(days=1)
+	scheduled_time = datetime.time(hour=9, minute=30)
+	time = datetime.datetime.combine(date, scheduled_time).timestamp()
+	if action["value"] == "message_1":
+		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = "",block = task_start,post_at=time)
+	else:
+		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = "",block = quiz_start,post_at=time)
+	app.client.chat_delete( channel= body['container']['channel_id'], ts =body['message']['ts'] )
+
+
+@app.action("task1")
+def modal_for_content(body , client , ack ):
+	del_msg = f"{body['container']['channel_id']},{body['message']['ts']}"
+	print(del_msg)
+	ack()
+	data = copy.deepcopy(task_modal)
+	data["private_metadata"] = del_msg
+	client.views_open(trigger_id=body["trigger_id"],view = data )
+
+
+@app.action("task_modal_choose")
+def task_modal_choose(ack,body,action,client):
+	ack()
+	#print(body["user"]["id"])
+	#print(action["block_id"])
+	data = copy.deepcopy(task_modal)	
+	for item in data["blocks"]:
+		if item.get("block_id", None) == action["block_id"]:
+			item["elements"][0]["text"]["text"] = "Choosen:thumbsup:"
+
+				#add sql
+			item["elements"][0]["style"] = "primary"
+		data["private_metadata"] = body["view"]["private_metadata"]
+		data["blocks"][0]["block_id"]=action["block_id"]+"," +body["user"]["id"]
+	client.views_update(view_id=body["view"]["id"],hash=body["view"]["hash"],view = data)
+
+
+@app.view("task_modal_view")
+def close_task(say,body,ack):
+	ack()
+	metadata = body["view"]["private_metadata"].split(",")
+	task = body["view"]["blocks"][0]["block_id"]
+	taskname = task.strip("task_").split(",")
+	if len(taskname) != 2:
+		say(channel = metadata[0], text ="Please choose a choice by pressing the choose button")
+	else:
+		metadata = body["view"]["private_metadata"].split(",")
+		app.client.chat_delete(channel = metadata[0], ts = metadata[1])
+		say( channel=taskname[1], blocks = [
 		{
 			"type": "section",
 			"text": {
-				"type": "plain_text",
-				"text": f"Your task for today will be: {task}.\n Once done please press the button done :smile:",
-				"emoji": True
-			}
-		},
-        {
-			"type": "actions",
-			"elements": [
-				{
-					"type": "button",
-					"text": {
-						"type": "plain_text",
-						"text": "Done",
-						"emoji": True
-					},
-					"value": "Done",
-                    "style": "primary",
-					"action_id": "Donetask"
-				}
-			]
-		}
-	]
-)
-
-@app.action("Donetask")
-def finished(ack, respond):
-    ack()
-    respond(blocks = [
-        {
-			"type": "section",
-			"text": {
-				"type": "plain_text",
-				"text": "Thank you for finishing your work!",
-				"emoji": True
-			}
-		},{
-			"type": "actions",
-			"elements": [
-				{
-					"type": "button",
-					"text": {
-						"type": "plain_text",
-						"emoji": True,
-						"text": "Another task"
-					},
-					"style": "primary",
-					"value": "click_me_123",
-                    "action_id": "taskmaster"
+				"type": "mrkdwn",
+				"text": f"Here is your lesson carefully curated by CyberSierra on {taskname[0]} \n Once you finish your lesson there will be a quiz so please pay attention!:eyes:"
+			},
+			"accessory": {
+				"type": "button",
+				"text": {
+					"type": "plain_text",
+					"text": "Lesson time",
+					"emoji": True
 				},
-				{
-					"type": "button",
-					"text": {
-						"type": "plain_text",
-						"emoji": True,
-						"text": "Deny"
-					},
-					"style": "danger",
-					"value": "click_me_123",
-                    "action_id": "Done"
-				}
-			]
+				"value": task,
+				"style" : "primary",
+				"url": "https://www.cybersierra.co/",
+				"action_id": "Content_piece"
+			}
 		}
 	])
+@app.action("Content_piece")
+def check_if_ready(say,action,ack):
+	ack()
+	task = action["value"]
+	data = copy.deepcopy(quiz_start)
+	data[1]["elements"][0]["value"] = task
+	say(blocks = data)
 
-@app.action("Done")
-def endwork(ack , respond):
-    ack()
-    respond("Have a nice day!")
+@app.action("quiz_modal")
+def quiz_modal_view(client,action,body,ack):
+	ack()
+	del_msg = f"{body['container']['channel_id']},{body['message']['ts']}"
+	val = action["value"]
+	print(val)
+	taskname = val.strip("task_")
+	#place holder before i implment sql
+	answers = [("product tear down" , True), ("Presentation", False), ("Work from home", False), ("Ikea shopping", False)]
+	random.shuffle(answers)
+	data = copy.deepcopy(quiz_modal)
+	for ans,result in answers:
+		data["blocks"][2]["element"]["options"].append({
+					"text": {
+							"type": "plain_text",
+							"text": ans,
+						},
+						"value": ("true" if result is True else "false")
+					})
+		data["private_metadata"]=del_msg
+	client.views_open(trigger_id=body["trigger_id"], view= data)
+
+@app.view("quiz_modal_view")
+def results(body, say, ack):
+	ack()
+	metadata = body["view"]["private_metadata"].split(",")
+	app.client.chat_delete(channel = metadata[0], ts = metadata[1])
+	id = body["user"]["id"]
+	selected = list(body["view"]["state"]["values"]["quiz_response"].items())
+	print(selected)
+	option = selected[0][1]['selected_option']['text']['text']
+	correct = selected[0][1]['selected_option']["value"]
+	print(option)
+	temp = {}
+	for entry in body["view"]["blocks"][2]["element"]["options"]:
+		temp[entry["text"]["text"]] = entry["value"]
+		if entry["value"] == "true":
+			ans = entry["text"]["text"]
+	print(id)
+	response = "You got it"+ (" correct!:tada:" if correct == "true" else f" wrong:smiling_face_with_tear: Correct answer was {ans}")
+	print(response)
+	say(channel = id , text = response)
+	say(channel = id ,text = "Thank you for finishing all you task!")
+	#maybe add a feed back
+
+
 
 @app.message("Log_users")
 def log(say):
@@ -152,39 +197,15 @@ def log(say):
 			_id[k] = v
 		else:
 			say(f"{v} is already logged")
+
 @app.message("Message_users")
 def message(say):
 	say("Loading...")
-	blocks = [
-		{
-			"type": "section",
-			"text": {
-				"type": "plain_text",
-				"text": "Who do you wish to message?",
-				"emoji": True
-			}
-		},
-        {
-			"type": "actions",
-			"elements": [
-				{
-					"type": "button",
-					"text": {
-						"type": "plain_text",
-						"text": "all",
-						"emoji": True
-					},
-					"value": "all",
-                    "style": "primary",
-					"action_id": "Message2"
-				}
-			]
-		}
-	]
+	data = copy.deepcopy(msg_usr)
 	try:
-		global _id
+		_id
 		for k,v in _id.items():
-			blocks.append({
+			data.append({
                 "type": "actions",
                 "elements": [
                     {
@@ -200,7 +221,7 @@ def message(say):
                     }
                 ]
             })
-		say(blocks = blocks)
+		say(blocks = data)
 	except Exception as e:
 		#implement logging next time
 		print(e)
@@ -214,7 +235,7 @@ def message2(action,ack,client,body):
         trigger_id=body["trigger_id"],
         view={
             "type": "modal",
-            "callback_id": "view_1",
+            "callback_id": "Messaging",
             "title": {"type": "plain_text", "text": "Secret Gratitude Box"},
             "submit": {"type": "plain_text", "text": "Submit"},
             "close": {"type": "plain_text", "text": "Cancel"},
@@ -226,10 +247,10 @@ def message2(action,ack,client,body):
                     "label": {"type": "plain_text", "text": "What are you greatful to them for?"},
                 }
             ],
-        },
+        }
     )
 
-@app.view("view_1")
+@app.view("Messaging")
 def Message3(ack , body):
 	ack()
 	k,v = list(body["view"]["state"]["values"]["my_block"].items())[0]
@@ -239,12 +260,13 @@ def Message3(ack , body):
 			app.client.chat_postMessage(channel = i  ,text = k )
 	else:
 		app.client.chat_postMessage(channel = k ,text = v )
+
 @app.event("message")
 def handle_message_events():
     pass
 
 def log_sql(user_id = None ,name = None ):
-	conn = sqlite3.connect(os.path.join("Slack","users.db"))
+	conn = sqlite3.connect("users.db")
 	c = conn.cursor()
 	if user_id == None or name == None:
 		return False
@@ -259,12 +281,10 @@ def log_sql(user_id = None ,name = None ):
 		return False 
 	
 
-
 if __name__ == "__main__":
 		c = sqlite3.connect("users.db").cursor()
 		c.execute("SELECT * FROM user")
-		z = c.fetchall()
-		for k , v in z:
+		for k , v in c.fetchall():
 			_id[k] = v
 		handler = SocketModeHandler(app, code)
 		handler.start()

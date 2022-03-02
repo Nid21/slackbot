@@ -1,0 +1,36 @@
+[
+    {
+        "type": "section",
+        "text": {
+            "type": "plain_text",
+            "text": "Ready for the quiz?:book:",
+            "emoji": true
+        }
+    },
+    {
+        "type": "actions",
+        "elements": [
+            {
+                "type": "button",
+                "text": {
+                    "type": "plain_text",
+                    "text": "Lets do it!:i_love_you_hand_sign:",
+                    "emoji": true
+                },
+                "value": " ",
+                "style": "primary",
+                "action_id": "quiz_modal"
+            },
+            {
+                "type": "button",
+                "text": {
+                    "type": "plain_text",
+                    "text": "Remind me again:sleeping:",
+                    "emoji": true
+                },
+                "value": "message_2",
+                "action_id": "reminder"
+            }
+        ]
+    }
+]
