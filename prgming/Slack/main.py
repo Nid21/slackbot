@@ -166,9 +166,12 @@ def quiz_modal_view(client,action,body,ack):
 	qn = json.loads(qns[1])
 	#answers = [("product tear down" , True), ("Presentation", False), ("Work from home", False), ("Ikea shopping", False)]
 	#random.shuffle(answers)
+	qn = list(qn.items())
+	random.shuffle(qn)
 	data = copy.deepcopy(quiz_modal)
+	print(qn)
 	#for ans,result in answers:
-	for results , answer in qn.items():
+	for results , answer in qn:
 		if results == "qns_content":
 			data["blocks"][2]["label"]["text"] = answer
 			continue
