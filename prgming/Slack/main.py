@@ -301,8 +301,7 @@ handler = SlackRequestHandler(app , code)
 def slack_events():
     return handler.handle(request)
 
-if __name__ == "__main__":
-	pass
+
 		#for k , v in c.fetchall():
 		#	_id[k] = v
 		#handler = SocketModeHandler(app, code)
