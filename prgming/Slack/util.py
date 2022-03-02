@@ -2,6 +2,7 @@ import sqlite3
 #import psycopg2
 import os
 import json
+import random
 
 #conn= psycopg2.connect(
 #    host = 'ec2-34-231-183-74.compute-1.amazonaws.com',
@@ -46,7 +47,8 @@ def select_sql_qns(num = 1):
     c = conn.cursor()
     c.execute("SELECT * FROM questions")
     results = c.fetchall()
-    return results[num-1]
+    random.shuffle(results)
+    return results[:num-1]
 
 def create_table():
     conn = sqlite3.connect(os.path.join("databases","users.db"))
