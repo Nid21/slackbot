@@ -8,17 +8,19 @@ from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
 from slack_bolt.adapter.flask import SlackRequestHandler
 import json
+import sqlite3
 from flask import Flask , request
 import util
-import psycopg2
-conn= psycopg2.connect(
-    host = 'ec2-34-231-183-74.compute-1.amazonaws.com',
-    database = 'dc0igpc5jm4k89',
-    user = 'nfzzdkpylmukuc',
-    password = '7ba6c5d8cb4fde597dd536de44d73f1d6dcfd285ad011e17c5980e0a377a0f67',
-    port = '5432'
-)
-c = conn.cursor()
+#import psycopg2
+
+#conn= psycopg2.connect(
+#    host = 'ec2-34-231-183-74.compute-1.amazonaws.com',
+#    database = 'dc0igpc5jm4k89',
+#    user = 'nfzzdkpylmukuc',
+#    password = '7ba6c5d8cb4fde597dd536de44d73f1d6dcfd285ad011e17c5980e0a377a0f67',
+#    port = '5432'
+#)
+#c = conn.cursor()
 
 
 _id = {}
@@ -69,12 +71,12 @@ def reminder(body,action,ack, say,client):
 	ack()
 
 	if datetime.datetime.today().weekday() in [4,5,6]:
-		say(text = "Aright set a reminder for monday 9:30 AM")
+		say(text = "Alright, i have set a reminder for monday 9:30 AM")
 		onDay = lambda date, day: date + datetime.timedelta(days=(day-date.weekday()+7)%7)
 		date = onDay(datetime.datetime.now().date(),0)
 		print(date+ datetime.timedelta())
 	else:
-		say(text = "Aright set a reminder for tommorow 9:30 AM")
+		say(text = "Alright, i have set a reminder for tommorow 9:30 AM")
 		date = datetime.date.today() + datetime.timedelta(days=1)
 	scheduled_time = datetime.time(hour=9, minute=30)
 	time = datetime.datetime.combine(date, scheduled_time).timestamp()
@@ -158,18 +160,27 @@ def quiz_modal_view(client,action,body,ack):
 	del_msg = f"{body['container']['channel_id']},{body['message']['ts']}"
 	val = action["value"]
 	print(val)
-	taskname = val.strip("task_")
+	#taskname = val.strip("task_")
 	#place holder before i implment sql
-	answers = [("product tear down" , True), ("Presentation", False), ("Work from home", False), ("Ikea shopping", False)]
-	random.shuffle(answers)
+	qns = util.select_sql_qns(1)
+	qn = json.loads(qns[1])
+	#answers = [("product tear down" , True), ("Presentation", False), ("Work from home", False), ("Ikea shopping", False)]
+	#random.shuffle(answers)
 	data = copy.deepcopy(quiz_modal)
-	for ans,result in answers:
+	#for ans,result in answers:
+	for results , answer in qn.items():
+		if results == "qns_content":
+			data["blocks"][2]["label"]["text"] = answer
+			continue
+		if results == "qns_task":
+			continue
+			
 		data["blocks"][2]["element"]["options"].append({
 					"text": {
 							"type": "plain_text",
-							"text": ans,
+							"text": answer,
 						},
-						"value": ("true" if result is True else "false")
+						"value": ("true" if results == "qns_correct" else "false")
 					})
 		data["private_metadata"]=del_msg
 	client.views_open(trigger_id=body["trigger_id"], view= data)
@@ -200,7 +211,8 @@ def results(body, say, ack):
 
 
 @app.command("/starts")
-def log(say):
+def log(say,ack):
+	ack()
 	say("logging")
 	users = app.client.users_list()
 	id = {member["id"] : member["name"] for member in users["members"] if "bot" not in member["name"].lower() }
@@ -247,13 +259,17 @@ def add_questions(action,ack,client,body):
 	client.views_open(trigger_id=body["trigger_id"], view = add_qns)
 
 @app.view("addqns")
-def log_quetions(body, ack):
+def log_quetions(body, ack,say):
 	ack()
+	id = body["user"]["id"]
 	qns = {}
 	for key ,value in body['view']["state"]["values"].items():
 		print(key,value['plain_text_input-action']["value"])
 		qns[key] = str(value['plain_text_input-action']["value"])
-	util.log_sql_qns(qns)
+	if util.log_sql_qns(qns):
+		say(channel = id , text = "Successfully added question")
+	else:
+		say(channel = id , text = "Error, question was not added")
 
 @app.action("Message2")
 def message2(action,ack,client,body):
@@ -293,17 +309,19 @@ def Message3(ack , body):
 def handle_message_events():
     pass
 
-	
-flask_app = Flask(__name__)
-handler = SlackRequestHandler(app)
-@flask_app.route("/slack/events", methods=["POST"])
-def slack_events():
-    return handler.handle(request)
+#heroku inplementation	
+#flask_app = Flask(__name__)
+#handler = SlackRequestHandler(app)
+#@flask_app.route("/slack/events", methods=["POST"])
+#def slack_events():
+#    return handler.handle(request)
 
-#if __name__ == "__main__":
-#	pass
-		#for k , v in c.fetchall():
-		#	_id[k] = v
-		#handler = SocketModeHandler(app, code)
-		#handler.start()
+if __name__ == "__main__":
+	conn = sqlite3.connect(os.path.join("databases","users.db"))
+	c = conn.cursor()
+	c.execute("SELECT * FROM botusers")
+	for k , v in c.fetchall():
+		_id[k] = v
+	handler = SocketModeHandler(app, code)
+	handler.start()
 

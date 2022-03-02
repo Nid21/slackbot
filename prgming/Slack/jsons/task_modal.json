@@ -57,7 +57,7 @@
 		},
 		{
 			"type": "actions",
-			"block_id": "task_SQLinjection",
+			"block_id": "task_SQL injection",
 			"elements": [
 				{
 					"type": "button",
