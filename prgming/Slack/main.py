@@ -206,7 +206,7 @@ def log(say):
 	users = app.client.users_list()
 	id = {member["id"] : member["name"] for member in users["members"] if "bot" not in member["name"].lower() }
 	for k,v in id.items():
-		if log_sql(user_id= k,name = v):
+		if util.log_sql(user_id= k,name = v):
 			say(f"Successfully logged in {v}")
 			global _id
 			_id[k] = v
@@ -294,20 +294,7 @@ def Message3(ack , body):
 def handle_message_events():
     pass
 
-def log_sql(user_id = None ,name = None ):
-	conn = sqlite3.connect("users.db")
-	c = conn.cursor()
-	if user_id == None or name == None:
-		return False
-	#check if have users
-	c.execute("SELECT * FROM user where user_id=?",(user_id, ))  
-	results = c.fetchall()
-	if len(results) == 0:   
-		c.execute("INSERT INTO user (user_id,username)VALUES( ?,	? )", (user_id,name))
-		conn.commit()   
-		return True
-	else:   
-		return False 
+
 	
 #flask_app = Flask(__name__)
 #handler = SlackRequestHandler(app , code)
