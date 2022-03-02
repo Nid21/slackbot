@@ -294,16 +294,21 @@ def Message3(ack , body):
 def handle_message_events():
     pass
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9539fa13370f5fe2ff1f21b00cf9900de6d44ce5
 	
-#flask_app = Flask(__name__)
-#handler = SlackRequestHandler(app , code)
-#@flask_app.route("/slack/events", methods=["POST"])
-#def slack_events():
-    #return handler.handle(request)
+flask_app = Flask(__name__)
+handler = SlackRequestHandler(app , code)
+@flask_app.route("/slack/events", methods=["POST"])
+def slack_events():
+    return handler.handle(request)
 
 if __name__ == "__main__":
+	pass
 		#for k , v in c.fetchall():
 		#	_id[k] = v
-		handler = SocketModeHandler(app, code)
-		handler.start()
+		#handler = SocketModeHandler(app, code)
+		#handler.start()
 
