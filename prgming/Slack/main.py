@@ -296,15 +296,16 @@ def handle_message_events():
 
 
 	
-#flask_app = Flask(__name__)
-#handler = SlackRequestHandler(app , code)
-#@flask_app.route("/slack/events", methods=["POST"])
-#def slack_events():
-    #return handler.handle(request)
+flask_app = Flask(__name__)
+handler = SlackRequestHandler(app , code)
+@flask_app.route("/slack/events", methods=["POST"])
+def slack_events():
+    return handler.handle(request)
 
 if __name__ == "__main__":
+	pass
 		#for k , v in c.fetchall():
 		#	_id[k] = v
-		handler = SocketModeHandler(app, code)
-		handler.start()
+		#handler = SocketModeHandler(app, code)
+		#handler.start()
 

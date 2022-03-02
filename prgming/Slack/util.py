@@ -35,7 +35,7 @@ def create_table():
         created_on TIMESTAMP);""")
     c.execute(""""CREATE TABLE questions(
         qn_id serial PRIMARY KEY,
-        qn_task
+        qn_task TEXT NOT NULL
         qns TEXT NOT NULL,
         ans_c TEXT NOT NULL,
         ans_w1 TEXT,
