@@ -54,10 +54,10 @@ def joke(say, client, ack):
 	ack()
 	jokes = set(["//be nice to the CPU\nThread_sleep(1);" , "!false\n(It's funny because it's true.)" ,"What did the router say to the doctor?\n'It hurts when IP'","Nidhish"])
 	say(jokes.pop())
-	time = datetime.datetime.now()+datetime.timedelta(seconds=20)
+	time = datetime.datetime.now()+datetime.timedelta(seconds=5)
 	
 	time = int(time.timestamp())
-	client.chat_scheduleMessage(channel="D034FAXCME3",text = " 1",blocks= task_start ,post_at=time)
+	client.chat_scheduleMessage(channel="D034FAXCME3",text = "reminder",blocks= quiz_start ,post_at=time)
 	result = client.chat_scheduledMessages_list()
         # Print scheduled messages
 	for message in result["scheduled_messages"]:
@@ -83,9 +83,9 @@ def reminder(body,action,ack, say,client):
 	scheduled_time = datetime.time(hour=9, minute=30)
 	time = datetime.datetime.combine(date, scheduled_time).timestamp()
 	if action["value"] == "message_1":
-		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = "",block = task_start,post_at=time)
+		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = "",blocks = task_start,post_at=time)
 	else:
-		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = "",block = quiz_start,post_at=time)
+		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = "",blocks = quiz_start,post_at=time)
 	app.client.chat_delete( channel= body['container']['channel_id'], ts =body['message']['ts'] )
 
 
@@ -165,7 +165,8 @@ def quiz_modal_view(client,action,body,ack):
 	#taskname = val.strip("task_")
 	#place holder before i implment sql
 	qns = util.select_sql_qns(1)
-	qn = json.loads(qns[1])
+	print(qns)
+	qn = json.loads(qns[0][1])
 	#answers = [("product tear down" , True), ("Presentation", False), ("Work from home", False), ("Ikea shopping", False)]
 	#random.shuffle(answers)
 	qn = list(qn.items())

@@ -47,8 +47,9 @@ def select_sql_qns(num = 1):
     c = conn.cursor()
     c.execute("SELECT * FROM questions")
     results = c.fetchall()
+    print("results", results)
     random.shuffle(results)
-    return results[:num-1]
+    return results[:num]
 
 def create_table():
     conn = sqlite3.connect(os.path.join("databases","users.db"))
