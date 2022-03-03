@@ -54,7 +54,7 @@ def joke(say, client, ack):
 	ack()
 	jokes = set(["//be nice to the CPU\nThread_sleep(1);" , "!false\n(It's funny because it's true.)" ,"What did the router say to the doctor?\n'It hurts when IP'","Nidhish"])
 	say(jokes.pop())
-	time = datetime.datetime.now()+datetime.timedelta(seconds=5)
+	time = datetime.datetime.now()+datetime.timedelta(seconds=20)
 	
 	time = int(time.timestamp())
 	client.chat_scheduleMessage(channel="D034FAXCME3",text = "reminder",blocks= quiz_start ,post_at=time)
