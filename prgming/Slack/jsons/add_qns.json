@@ -92,7 +92,7 @@
 			},
 			"label": {
 				"type": "plain_text",
-				"text": "Question focus formate: task_(focus), eg task_SQL",
+				"text": "Task number, in integer",
 				"emoji": true
 			}
         }

@@ -182,6 +182,7 @@ def quiz_modal_view(client,action,body,ack):
 			data["blocks"][2]["label"]["text"] = answer
 			continue
 		if results == "qns_task":
+			#need a way to pass the task_num
 			#data["blocks"][2]["block_id"] = answer
 			continue
 			
