@@ -1,5 +1,5 @@
-code = "xapp-1-A034FAQDDDM-3185265456867-a9d141a0fb981d5ffb3d2394c986763ce1de6aec644e0a3f76e8dbf3240e79bb"
-token = "xoxb-3165462542083-3165963183010-H97VzYxZB2ZV4dOMA714SZkE"
+code = "xapp-1-A034FAQDDDM-3189222391684-ba8000ae2dcafe6665bb46b7e5144791fcef1d80248e14e1e6ad1733602cdc26"
+token = "xoxb-3165462542083-3165963183010-nbDywQJNyYNwGkgsN7zeqqMT"
 import datetime
 import os
 import copy
@@ -22,6 +22,11 @@ import util
 #)
 #c = conn.cursor()
 
+#create a function that increments the day_ghost in results if not completed and a 
+#biweekly function that incrases the weeknum of all in botuser table and push notification to our users
+
+# for results table if weeknum and weeknum of user function is different then do not increment days_ghost
+#maybe can add into a did not finish table
 
 _id = {}
 app = App(token = token)
@@ -52,8 +57,11 @@ def ask_for_introduction(event, say):
 @app.command("/joke")
 def joke(say, client, ack):
 	ack()
-	jokes = set(["//be nice to the CPU\nThread_sleep(1);" , "!false\n(It's funny because it's true.)" ,"What did the router say to the doctor?\n'It hurts when IP'","Nidhish"])
-	say(jokes.pop())
+	with open(os.path.join("databases","content", "jokes.txt"), "r") as f:
+		jokes = f.read()
+	jokes = jokes.split(",")
+	random.shuffle(jokes)
+	say(jokes[0])
 	time = datetime.datetime.now()+datetime.timedelta(seconds=20)
 	
 	time = int(time.timestamp())
@@ -65,13 +73,16 @@ def joke(say, client, ack):
 
 @app.message("app")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 def mention_handler( say):
-	say(text = "debugging")
+	say(text = "starting tasks...")
+	#not implemented
+	# add a sql entry in results table adding user_id, week_num , completed = 0, days_ghost = 0
+	# if already has entry set days_ghost back to zero
+	#util.log_sql_results
 	say(blocks = task_start)
 
 @app.action("reminder")
 def reminder(body,action,ack, say,client):
 	ack()
-
 	if datetime.datetime.today().weekday() in [4,5,6]:
 		say(text = "Alright, i have set a reminder for monday 9:30 AM")
 		onDay = lambda date, day: date + datetime.timedelta(days=(day-date.weekday()+7)%7)
@@ -83,9 +94,9 @@ def reminder(body,action,ack, say,client):
 	scheduled_time = datetime.time(hour=9, minute=30)
 	time = datetime.datetime.combine(date, scheduled_time).timestamp()
 	if action["value"] == "message_1":
-		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = " ",blocks = task_start,post_at=time)
+		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = "reminder",blocks = task_start,post_at=time)
 	else:
-		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = " ",blocks = quiz_start,post_at=time)
+		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = "reminder",blocks = quiz_start,post_at=time)
 	app.client.chat_delete( channel= body['container']['channel_id'], ts =body['message']['ts'] )
 
 
@@ -95,6 +106,10 @@ def modal_for_content(body , client , ack ):
 	print(del_msg)
 	ack()
 	data = copy.deepcopy(task_modal)
+	# not implemented
+	#tasks = util.select_sql_tasks_modal(3)
+	#for task in tasks:
+	#	data["blocks"].append(json.loads(task)) convert it to json 
 	data["private_metadata"] = del_msg
 	client.views_open(trigger_id=body["trigger_id"],view = data )
 
@@ -108,10 +123,9 @@ def task_modal_choose(ack,body,action,client):
 	for item in data["blocks"]:
 		if item.get("block_id", None) == action["block_id"]:
 			item["elements"][0]["text"]["text"] = "Choosen:thumbsup:"
-
-				#add sql
 			item["elements"][0]["style"] = "primary"
 		data["private_metadata"] = body["view"]["private_metadata"]
+		#action["block_id"] is the task_name and action["value"] is task_id
 		data["blocks"][0]["block_id"]=action["block_id"]+","+action["value"]
 	client.views_update(view_id=body["view"]["id"],hash=body["view"]["hash"],view = data)
 
@@ -128,7 +142,11 @@ def close_task(say,body,ack):
 		metadata = body["view"]["private_metadata"].split(",")
 		app.client.chat_delete(channel = metadata[0], ts = metadata[1])
 		say(channel = metadata[0], text = taskname[1])
-		#add sql call to tasks table looking for task_id of taskname[1]
+		#add sql call to alter results setting task_id and days_ghost = 0
+		#util.log_sql_qns_choice(user_id , task_id)
+
+		#sql call to get task_lesson based on task_id
+		#util.select_task_lesson
 		say( channel=metadata[0], blocks = [
 		{
 			"type": "section",
@@ -162,30 +180,31 @@ def check_if_ready(say,action,ack):
 @app.action("quiz_modal")
 def quiz_modal_view(client,action,body,ack):
 	ack()
-	del_msg = f"{body['container']['channel_id']},{body['message']['ts']}"
 	val = action["value"]
 	print(val)
 	#taskname = val.strip("task_")
 	#place holder before i implment sql
 	qns = util.select_sql_qns(1)
-	print(qns)
-	qn = json.loads(qns[0][1])
-	#answers = [("product tear down" , True), ("Presentation", False), ("Work from home", False), ("Ikea shopping", False)]
-	#random.shuffle(answers)
-	qn = list(qn.items())
+	if len(qns) == 0:
+		qns.append((1,'{"qns_content": "question context", "qns_qns": "what is the best language", "qns_correct": "python", "qns_wrong1": "java", "qns_wrong2": "c++", "qns_wrong3" :"Golang", "qns_task":"1"}'))
+	qn = list(json.loads(qns[0][1]).items())
+	#qn = list(qn.items())
 	random.shuffle(qn)
 	data = copy.deepcopy(quiz_modal)
 	print(qn)
 	#for ans,result in answers:
 	for results , answer in qn:
 		if results == "qns_content":
-			data["blocks"][2]["label"]["text"] = answer
+			data["blocks"][0]["text"]["text"] = answer
 			continue
 		if results == "qns_task":
 			#need a way to pass the task_num
 			#data["blocks"][2]["block_id"] = answer
+			del_msg = f"{body['container']['channel_id']},{body['message']['ts'],{answer}}"
 			continue
-			
+		if results == "qns_qns":
+			data["blocks"][2]["label"]["text"] = answer
+			continue	
 		data["blocks"][2]["element"]["options"].append({
 					"text": {
 							"type": "plain_text",
@@ -193,7 +212,8 @@ def quiz_modal_view(client,action,body,ack):
 						},
 						"value": ("true" if results == "qns_correct" else "false")
 					})
-		data["private_metadata"]=del_msg
+	data["private_metadata"]=del_msg
+	print(data)
 	client.views_open(trigger_id=body["trigger_id"], view= data)
 
 @app.view("quiz_modal_view")
@@ -202,7 +222,6 @@ def results(body, say, ack):
 	metadata = body["view"]["private_metadata"].split(",")
 	app.client.chat_delete(channel = metadata[0], ts = metadata[1])
 	id = body["user"]["id"]
-	print(body["view"]["state"]["values"])
 	selected = list(body["view"]["state"]["values"]["quiz_response"].items())
 	print(selected)
 	option = selected[0][1]['selected_option']['text']['text']
@@ -219,6 +238,7 @@ def results(body, say, ack):
 	say(channel = id , text = response)
 	say(channel = id ,text = "Thank you for finishing all you task!")
 	#maybe add a feed back
+	#add sql
 
 
 
@@ -266,7 +286,7 @@ def message(say):
 		say("No users logged!")
 
 @app.command("/addqns")
-def add_questions(action,ack,client,body):
+def add_questions(ack,client,body):
 	ack()
 	client.views_open(trigger_id=body["trigger_id"], view = add_qns)
 
@@ -319,7 +339,63 @@ def Message3(ack , body):
 
 @app.event("message")
 def handle_message_events():
-    pass
+	pass
+
+@app.message("radio_button")
+def handle_message_events(say):
+    say(blocks =  [
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "radio_buttons",
+					"options": [
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "*this is plain_text text*",
+								"emoji": True
+							},
+							"value": "value-0"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "*this is plain_text text*",
+								"emoji": True
+							},
+							"value": "value-1"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "*this is plain_text text*",
+								"emoji": True
+							},
+							"value": "value-2"
+						}
+					],
+					"action_id": "actionId-0"
+				},
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Click Me",
+						"emoji": True
+					},
+					"value": "click_me_123",
+					"action_id": "gay"
+				}
+			]
+		}
+	])
+
+@app.action("gay")
+def temp(ack,body):
+	ack()
+	print(body)
+	
 
 #heroku inplementation	
 #flask_app = Flask(__name__)
@@ -331,7 +407,7 @@ def handle_message_events():
 if __name__ == "__main__":
 	conn = sqlite3.connect(os.path.join("databases","users.db"))
 	c = conn.cursor()
-	c.execute("SELECT * FROM botusers")
+	c.execute("SELECT user_id,user_name FROM botusers")
 	for k , v in c.fetchall():
 		_id[k] = v
 	handler = SocketModeHandler(app, code)

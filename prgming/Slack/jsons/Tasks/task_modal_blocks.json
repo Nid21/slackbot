@@ -1,18 +1,7 @@
 [
     {
        "type":"section",
-       "block_id":"placeholder",
-       "text":{
-          "type":"plain_text",
-          "text":"Please choose a topic which you are interested in learning about.",
-          "emoji":true
-       }
-    },
-    {
-       "type":"divider"
-    },
-    {
-       "type":"section",
+       "block_id": "their name",
        "text":{
           "type":"mrkdwn",
           "text":"*Topic 1*\n*Topic 1 description, sql injection is where ......."
@@ -39,7 +28,7 @@
     },
     {
        "type":"actions",
-       "block_id":"task_SQL injection",
+       "block_id":"name of the task (task_name)",
        "elements":[
           {
              "type":"button",
@@ -48,7 +37,7 @@
                 "text":"Choose",
                 "emoji":true
              },
-             "value":"task_SQLinjection",
+             "value":"task_id of task",
              "action_id":"task_modal_choose"
           },
           {

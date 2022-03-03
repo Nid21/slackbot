@@ -25,12 +25,27 @@
 				"multiline": true,
 				"action_id": "plain_text_input-action"
 			},
+		
+			"label": {
+				"type": "plain_text",
+				"text": "Context/ Scenario",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "qns_qns",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
 			"label": {
 				"type": "plain_text",
 				"text": "Question",
 				"emoji": true
 			}
 		},
+		
 		{
 			"type": "input",
 			"block_id": "qns_correct",
