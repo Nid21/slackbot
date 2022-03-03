@@ -1,0 +1,68 @@
+[
+    {
+       "type":"section",
+       "block_id":"placeholder",
+       "text":{
+          "type":"plain_text",
+          "text":"Please choose a topic which you are interested in learning about.",
+          "emoji":true
+       }
+    },
+    {
+       "type":"divider"
+    },
+    {
+       "type":"section",
+       "text":{
+          "type":"mrkdwn",
+          "text":"*Topic 1*\n*Topic 1 description, sql injection is where ......."
+       },
+       "accessory":{
+          "type":"image",
+          "image_url":"https://api.slack.com/img/blocks/bkb_template_images/Streamline-Beach.png",
+          "alt_text":"Sql injection"
+       }
+    },
+    {
+       "type":"context",
+       "elements":[
+          {
+             "type":"image",
+             "image_url":"https://pbs.twimg.com/profile_images/625633822235693056/lNGUneLX_400x400.jpg",
+             "alt_text":"cute cat"
+          },
+          {
+             "type":"mrkdwn",
+             "text":"*Subhajit Mandal* has approved this message."
+          }
+       ]
+    },
+    {
+       "type":"actions",
+       "block_id":"task_SQL injection",
+       "elements":[
+          {
+             "type":"button",
+             "text":{
+                "type":"plain_text",
+                "text":"Choose",
+                "emoji":true
+             },
+             "value":"task_SQLinjection",
+             "action_id":"task_modal_choose"
+          },
+          {
+             "type":"button",
+             "text":{
+                "type":"plain_text",
+                "text":"Find out more",
+                "emoji":true
+             },
+             "value":"SQL_injection",
+             "url":"https://www.google.com/search?q=cats"
+          }
+       ]
+    }
+]
+ 
+

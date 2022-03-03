@@ -37,7 +37,7 @@ with open(os.path.join("jsons", "msg_usr.json"), "r") as f:
 	msg_usr =json.load(f)
 with open(os.path.join("jsons", "add_qns.json"), "r") as f:
 	add_qns =json.load(f)
-
+	
 @app.event("team_join")
 def ask_for_introduction(event, say):
 	welcome_channel_id = "C034PA3SNF8"
@@ -83,9 +83,9 @@ def reminder(body,action,ack, say,client):
 	scheduled_time = datetime.time(hour=9, minute=30)
 	time = datetime.datetime.combine(date, scheduled_time).timestamp()
 	if action["value"] == "message_1":
-		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = "",blocks = task_start,post_at=time)
+		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = " ",blocks = task_start,post_at=time)
 	else:
-		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = "",blocks = quiz_start,post_at=time)
+		client.chat_scheduleMessage(channel=body['container']['channel_id'],text = " ",blocks = quiz_start,post_at=time)
 	app.client.chat_delete( channel= body['container']['channel_id'], ts =body['message']['ts'] )
 
 
