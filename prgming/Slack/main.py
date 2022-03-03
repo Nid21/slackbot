@@ -1,5 +1,5 @@
-code = "xapp-1-A034FAQDDDM-3173991433606-222d8d0ae1d6e6df987906cccced03cde67d7f7f2e832673a8ea9060e344dd7c"
-token = "xoxb-3165462542083-3165963183010-jtNOqRi6yZf3VD3cjgxp0Mb8"
+code = "xapp-1-A034FAQDDDM-3185265456867-a9d141a0fb981d5ffb3d2394c986763ce1de6aec644e0a3f76e8dbf3240e79bb"
+token = "xoxb-3165462542083-3165963183010-H97VzYxZB2ZV4dOMA714SZkE"
 import datetime
 import os
 import copy
@@ -112,7 +112,7 @@ def task_modal_choose(ack,body,action,client):
 				#add sql
 			item["elements"][0]["style"] = "primary"
 		data["private_metadata"] = body["view"]["private_metadata"]
-		data["blocks"][0]["block_id"]=action["block_id"]+"," +body["user"]["id"]
+		data["blocks"][0]["block_id"]=action["block_id"]+","+action["value"]
 	client.views_update(view_id=body["view"]["id"],hash=body["view"]["hash"],view = data)
 
 
@@ -127,7 +127,9 @@ def close_task(say,body,ack):
 	else:
 		metadata = body["view"]["private_metadata"].split(",")
 		app.client.chat_delete(channel = metadata[0], ts = metadata[1])
-		say( channel=taskname[1], blocks = [
+		say(channel = metadata[0], text = taskname[1])
+		#add sql call to tasks table looking for task_id of taskname[1]
+		say( channel=metadata[0], blocks = [
 		{
 			"type": "section",
 			"text": {
@@ -143,6 +145,7 @@ def close_task(say,body,ack):
 				},
 				"value": task,
 				"style" : "primary",
+				#url will change base on the sql call
 				"url": "https://www.cybersierra.co/",
 				"action_id": "Content_piece"
 			}
@@ -179,6 +182,7 @@ def quiz_modal_view(client,action,body,ack):
 			data["blocks"][2]["label"]["text"] = answer
 			continue
 		if results == "qns_task":
+			#data["blocks"][2]["block_id"] = answer
 			continue
 			
 		data["blocks"][2]["element"]["options"].append({
@@ -197,6 +201,7 @@ def results(body, say, ack):
 	metadata = body["view"]["private_metadata"].split(",")
 	app.client.chat_delete(channel = metadata[0], ts = metadata[1])
 	id = body["user"]["id"]
+	print(body["view"]["state"]["values"])
 	selected = list(body["view"]["state"]["values"]["quiz_response"].items())
 	print(selected)
 	option = selected[0][1]['selected_option']['text']['text']

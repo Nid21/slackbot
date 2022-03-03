@@ -37,15 +37,16 @@ def log_sql_qns(dict):
         print(len(dict))
         return False
     else:
-        c.execute("INSERT INTO questions (question)VALUES (?)", (json.dumps(dict) , ))
+        dict1 = json.dumps(dict)
+        c.execute("INSERT INTO questions (task_id , question)VALUES (?,?)", (int(dict["qns_task"]),dict1))
         conn.commit()
         #c.execute("INSERT INTO questions (qns,ans_c,ans_w1,ans_w2,ans_w3)VALUES(%s,%s,%s,%s,%s )", (dict["qns_content"], dict["qns_correct"], dict["qns_wrong1"], dict["qns_wrong2"], dict["qns_wrong3"]))
         return True
 
-def select_sql_qns(num = 1):
+def select_sql_qns(num = 1 , task = 1):
     conn = sqlite3.connect(os.path.join("databases","users.db"))
     c = conn.cursor()
-    c.execute("SELECT * FROM questions")
+    c.execute("SELECT qn_id,question FROM questions where task_id=(?)",(task,))
     results = c.fetchall()
     print("results", results)
     random.shuffle(results)
@@ -54,11 +55,11 @@ def select_sql_qns(num = 1):
 def create_table():
     conn = sqlite3.connect(os.path.join("databases","users.db"))
     c = conn.cursor()
-    c.execute("CREATE TABLE botusers(user_id int primary key , user_name text)")
+    c.execute("CREATE TABLE botusers(user_id text primary key , user_name text)")
+    c.execute("CREATE TABLE tasks(task_id INTEGER PRIMARY KEY, task_modal text not null, task_lesson text not null)")
+    c.execute("CREATE TABLE results(user_id text NOT NULL, task_id int NOT NULL,qn_id int, completed int NOT NULL, date_sent int NO NULL , result int , option text)")
+    c.execute("CREATE TABLE questions(qn_id INTEGER PRIMARY KEY,task_id int not null , question text, FOREIGN KEY(task_id) REFERENCES tasks(task_id))")
     conn.commit()
-    c.execute("CREATE TABLE questions(qn_id INTEGER PRIMARY KEY , question text)")
-    conn.commit()
-
     #c.execute("""CREATE TABLE botuser(
     #    user_id VARCHAR(20) PRIMARY KEY,
     #    user_name VARCHAR(50) NOT NULL,

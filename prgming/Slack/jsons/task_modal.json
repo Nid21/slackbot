@@ -33,7 +33,7 @@
 			"type": "section",
 			"text": {
 				"type": "mrkdwn",
-				"text": "*Topic 1*\n*Topic 1 description, sql injection is where ......."
+				"text": "*Topic 1*\nTopic 1 description, sql injection is where ......."
 			},
 			"accessory": {
 				"type": "image",
